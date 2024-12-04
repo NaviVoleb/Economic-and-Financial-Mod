@@ -53,10 +53,10 @@
   ## Title:
   ################################
 
-  ECONOMY:0 "Economy"
-  FINANCE:0 "Finance"
-  STOCKPILE:0 "Stockpile"
-  COUNTRY_CURRENCY_ONE_LINE:0 "State Currency"
+  ECONOMY:0 "Экономика"
+  FINANCE:0 "Финансы"
+  STOCKPILE:0 "Запасы"
+  COUNTRY_CURRENCY_ONE_LINE:0 "Гос. валюта"
   CENTRAL_BANK_TITLE:0 "[concept_central_bank]"
   FINANCIAL_CENTRE_TITLE:0 "[concept_financial_centre]"
   NATIONAL_STOCKPILE_TITLE:0 "[concept_national_stockpile]"
@@ -71,8 +71,8 @@
   GOLD_BALANCE_TITLE:0 "[concept_gold_balance]"
   GOLD_BALANCE_BY_COUNTRY_TITLE:0 "[concept_gold_balance_by_country]"
   WORLD_CURRENCY_TITLE:0 "[concept_world_currency]"
-  INDEPENDENT_ECONOMY:0 "Independent Economy"
-  DEPENDENT_ECONOMY:0 "Dependent Economy"
+  INDEPENDENT_ECONOMY:0 "Независимые экономики"
+  DEPENDENT_ECONOMY:0 "Зависимые экономики"
   EVOLUTION_OF_THE_CURRENCY_VALUE_TITLE:0 "[concept_evolution_of_the_currency_value]"
   CONCEPT_EXCHANGE_RATE_TITLE:0 "[concept_exchange_rate]"
   STOCK_MARKET_INDEX_TITLE:0 "[concept_stock_market_index]"
@@ -86,8 +86,8 @@
 
   GOVERNMENT_TREASURY_DESC_EF:0 "[concept_government_treasury]: #T [GetPlayer.GetGoldReserves|Dv] [GetMetaPlayer.GetPlayedOrObservedCountry.GetCustom('currency_symbol')] / [GetPlayer.MakeScope.ScriptValue('gdp_var')|D3] [GetMetaPlayer.GetPlayedOrObservedCountry.GetCustom('currency_symbol')]#!"
 
- concept_government_treasury:0 "Government Treasury"
- concept_government_treasury_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] weekly budget surplus is accumulated in its $concept_government_treasury$. If the budget balance becomes negative, any [concept_money] in the $concept_government_treasury$ will be depleted first before the $concept_country$ starts taking [concept_loans]."
+ concept_government_treasury:0 "Казначейство"
+ concept_government_treasury_desc:1 "[Concept('concept_country','Государственный')] еженедельный профицит бюджета накапливается в $concept_government_treasury$. Если баланс бюджета становится отрицательным, [concept_money] в казначействе будут тратится первыми, прежде чем страна начнет брать [concept_loans]."
 
   # credit_at_central_bank_interest_1_years:0 "Interest to be repaid per years"
   # credit_at_central_bank_interest_per_years:0 "Interest to be repaid per years"
@@ -95,17 +95,17 @@
   # credit_at_central_bank_interest_per_years_added:0 "Per year projection"
   # credit_at_central_bank_interest_per_month_added:0 "Per month projection"
 
-  credit_at_central_bank_interest_1_years:0 "Total Interest Repayment"
-  credit_at_central_bank_interest_per_years:0 "Total Interest Repayment"
-  credit_at_central_bank_interest_per_month:0 "Monthly Interest Repayment"
-  credit_at_central_bank_interest_per_years_added:0 "Total Projection"
-  credit_at_central_bank_interest_per_month_added:0 "Per month projection"
+  credit_at_central_bank_interest_1_years:0 "Общая сумма погашения процентов"
+  credit_at_central_bank_interest_per_years:0 "Общая сумма погашения процентов"
+  credit_at_central_bank_interest_per_month:0 "Ежемесячное погашение процентов"
+  credit_at_central_bank_interest_per_years_added:0 "Общий прогноз"
+  credit_at_central_bank_interest_per_month_added:0 "Прогноз на месяц"
 
-  long_term_interest_rate:0 "Long term interest rate"
-  BUDGET_GOVERNMENT_EXPENSES:0 "Government Expenses"
-  NATIONAL_BALANCE:0 "Balance of Finance"
+  long_term_interest_rate:0 "Долгосрочная процентная ставка"
+  BUDGET_GOVERNMENT_EXPENSES:0 "Расходы правительства"
+  NATIONAL_BALANCE:0 "Финансовый баланс"
 
-  private_bank_title:0 "[concept_investment_pool] - Private Bank"
+  private_bank_title:0 "[concept_investment_pool] - Частный банк"
 
   FINANCIAL_CENTRE_TITLE_arg:0 "[Concept('concept_financial_centre','Bolsa de Comercio de Buenos Aires')]"
   FINANCIAL_CENTRE_TITLE_aus:0 "[Concept('concept_financial_centre','Wiener Börse')]"
@@ -162,18 +162,18 @@
   ## generic_name :
 
   #money_supply:0 "Money Supply"
-  money_supply_montly:0 "Money supply monthly"
+  money_supply_montly:0 "Денежная масса в месяц"
 
-  GDP_var_year_1:0 "GDP - 1 year"
-  GDP_var_year_5:0 "GDP - 5 year"
-  GDP_var_year_10:0 "GDP - 10 year"
+  GDP_var_year_1:0 "ВВП - 1 год"
+  GDP_var_year_5:0 "ВВП - 5 лет"
+  GDP_var_year_10:0 "ВВП - 10 лет"
 
     ## no_formated :
 
-  money_value_no_formated:0 "Money Value"
-  money_supply_no_formated:0 "Money Supply"
-  national_capacity_no_formated:0 "National capacity"
-  inflation_rate_no_formated:0 "Inflation Rate"
+  money_value_no_formated:0 "Ценность"
+  money_supply_no_formated:0 "Масса"
+  national_capacity_no_formated:0 "Богатство"
+  inflation_rate_no_formated:0 "Инфляция"
 
 
   customs_union_texture:0 "@customs_union!"
@@ -188,7 +188,7 @@
   green_arow_bellow:0 "@green_arow_bellow!"
   yellow_arrow:0 "@yellow_arrow!"
 
-  engaged_private_banks:0 "Direct investment in Private Banks"
+  engaged_private_banks:0 "Прямые инвестиции в частные банки"
 
   #####################################################################################################################
   #####################################################################################################################
@@ -200,50 +200,49 @@
 
   #Budget_panel:
   # - Eco
-  central_bank_budget_panel_desc:0 "In the 19th century, a [concept_central_bank] was generally defined as a economic institution with the primary role of issuing the national currency, regulating the [concept_money_supply], overseeing the financial system, and maintaining economic stability. [concept_central_bank] of the 19th century were often established in response to the need for a central issuer of currency capable of controlling the [concept_money_supply] and stabilizing the economic system."
+  central_bank_budget_panel_desc:0 "В XIX веке, основной задачей центрального банка была эмиссия национальной валюты, регулирование [Concept('concept_money_supply', 'денежной массы')], надзор за финансовой системой и поддержание экономической стабильности. Центробанк XIX века часто создавался в ответ на потребность в центральном эмитенте валюты, способном контролировать денежную массу и стабилизировать экономическую систему."
+  info_eco_main:0 "Основная информация"
+  info_eco_detailed:0 "Подробная информация"
 
-  info_eco_main:0 "Main Economic Information"
-  info_eco_detailed:0 "Detailed Economic Information"
+  interest_value_5Y:0 "(Международная) ставка краткосрочных облигаций"
+  interest_value_10Y:0 "(Международная) ставка по долгосрочным облигациям"
+  interest_value_domestic:0 "(Внутренняя) ставка по облигациям"
 
-  interest_value_5Y:0 "(International) Short-term bond rate"
-  interest_value_10Y:0 "(International) Long-term bond rate"
-  interest_value_domestic:0 "(Domestic) Bond rate"
-
-  economic_policy:0 "Economic Policy"
+  economic_policy:0 "Экономическая политика"
   monetary_policy:0 "[concept_monetary_policy]"
-  devaluation:0 "Devaluation"
-  revaluation:0 "Revaluation"
-  current_monetary_policy:0 "Current monetary policy:"
-  for_overlord:0 "Parity management for your subjects"
-  your_parity_target:0 "Your [concept_parity] objective for your subjects:"
-  for_subject:0 "For Subject:"
-  your_subject:0 "Information on your subject"
-  you_are_not_subject:0 "You are not subject"
-  you_are_subject_of:0 "You are subject of:"
-  monetary_parity_is:0 "Monetary [concept_parity] is:"
-  currency_parity_laws:0 "Currency [concept_parity] laws:"
-  real_monetary_parity_after_inflation:0 "Monetary [concept_parity] after inflation:"
-  gold_reserves_var:0 "Country [concept_government_treasury]"
+  devaluation:0 "Девальвация"
+  revaluation:0 "Ревальвация"
+  current_monetary_policy:0 "Денежная политика:"
+  for_overlord:0 "Управление паритетом для субъектов"
+  your_parity_target:0 "Ваш [concept_parity] objective for your subjects:"
+  for_subject:0 "Для субъектов:"
+  your_subject:0 "Информация о ваших субъектах"
+  you_are_not_subject:0 "Вы не субъект"
+  you_are_subject_of:0 "Вы субъект:"
+  monetary_parity_is:0 "Денежный [concept_parity] это:"
+  currency_parity_laws:0 "Законы валютного [concept_parity]:"
+  real_monetary_parity_after_inflation:0 "Денежный [concept_parity] после инфляции:"
+  gold_reserves_var:0 "[concept_government_treasury] страны"
   central_bank_metal_reserves:0 "[concept_central_bank_metal_reserves]"
-  central_bank_metal_stacked_per_month:0 "[GetPlayer.GetCustom('monetary_system_name')] stacked per month"
+  central_bank_metal_stacked_per_month:0 "[GetPlayer.GetCustom('monetary_system_name')] поступает в месяц"
   gold_balance_scripted:0 "[concept_gold_balance]"
-  current_account:0 "Current account" #same as central_bank_gold_stacked_per_month but more small
-  delta_value:0 "Balance of payments"
-  delta_value_small:0 "Balance of payments"
-  budget_panel_desc_reserve_currency:0 "In the 19th century, the term "reserve currency" referred to a widely accepted foreign currency held by governments and central banks as a reserve for their international transactions and to maintain economic stability."
-  total_currency_product:0 "Total Currency Product"
-  currency_own:0 "Currency held by the country"
-  currency_no_own:0 "Currency held by another country"
-  EF_BP_CHART_RESERVE_CURRENCY_HEADING:0 "Reserve Currenncy"
-  central_bank_metal_reserves_state:0 "Central Bank Metal Reserves"
+  current_account:0 "Расчетный счет" #same as central_bank_gold_stacked_per_month but more small
+  delta_value:0 "Платежный баланс"
+  delta_value_small:0 "Платежный баланс"
+  budget_panel_desc_reserve_currency:0 "В XIX веке термин «резервная валюта» обозначал общепризнанную иностранную валюту, которую правительства и центральные банки держали в качестве резерва для своих международных операций и поддержания экономической стабильности."
+  total_currency_product:0 "Общий валютный продукт"
+  currency_own:0 "Валюта в стране"
+  currency_no_own:0 "Валюта в других странах"
+  EF_BP_CHART_RESERVE_CURRENCY_HEADING:0 "Резервная валюта"
+  central_bank_metal_reserves_state:0 "Запасы Центрального банка"
 
   off:0 "#n OFF#!:"
   on:0 "#p ON#!:"
-  subject_type:0 "Subject Type"
-  funding_on:0 "Funding On"
-  funding_off:0 "Funding Off"
+  subject_type:0 "Тип субъекта"
+  funding_on:0 "Финансирование"
+  funding_off:0 "Финансирование прекращено"
 
-  apply_for_international_funding:0 "Apply for international funding"
+  apply_for_international_funding:0 "Подать заявку на международное финансирование"
 
   gold_lent_to_other:0 "Gold Extended"
   gold_lent_to_foreign_countries:0 "Foreign Debt Investment"
@@ -258,37 +257,37 @@
 
   money_value_target_real:0 "[concept_money_value_target_real]"
   money_value_target:0 "[concept_money_value_target]"
-  predicted_money_value:0 "Predicted Money Value"
+  predicted_money_value:0 "Прогнозируемая денежная ценность"
 
   money_value_rapported_inflation:0 "[concept_money_value_rapported_inflation]"
 
-  money_value_target_set:0 "Set New [GetPlayer.GetCustom('monetary_system_name')] Parity"
-  no_monetary_policy:0 "No Monetary Policy"
+  money_value_target_set:0 "Одобрить [GetPlayer.GetCustom('monetary_system_name')] паритет"
+  no_monetary_policy:0 "Нет монетарной политики"
 
   law_no_monetary_policy_texture:0 "@no_monetary_policy!"
   law_revaluation_texture:0 "@revaluation!"
   law_devaluation_texture:0 "@devaluation!"
   law_war_economy_texture:0 "@war_economy!"
 
-  law_revaluation_25:0 "Revaluation 25%"
-  law_revaluation_50:0 "Revaluation 50%"
-  law_revaluation_75:0 "Revaluation 75%"
-  law_revaluation_100:0 "Revaluation 100%"
+  law_revaluation_25:0 "Ревальвация 25%"
+  law_revaluation_50:0 "Ревальвация 50%"
+  law_revaluation_75:0 "Ревальвация 75%"
+  law_revaluation_100:0 "Ревальвация 100%"
 
-  law_devaluation_25:0 "Devaluation 25%"
-  law_devaluation_50:0 "Devaluation 50%"
-  law_devaluation_75:0 "Devaluation 75%"
-  law_devaluation_100:0 "Devaluation 100%"
+  law_devaluation_25:0 "Девальвация 25%"
+  law_devaluation_50:0 "Девальвация 50%"
+  law_devaluation_75:0 "Девальвация 75%"
+  law_devaluation_100:0 "Девальвация 100%"
 
-  money_value_var_1_years:0 "Money Value - 1 Years"
-  money_value_var_5_years:0 "Money Value - 5 Years"
-  money_value_var_10_years:0 "Money Value - 10 Years"
-  total_gold_reserves:0 "Total Gold Reserves"
+  money_value_var_1_years:0 "Денежная оценка - 1 год"
+  money_value_var_5_years:0 "Денежная оценка - 5 лет"
+  money_value_var_10_years:0 "Денежная оценка - 10 лет"
+  total_gold_reserves:0 "Общие запасы золота"
 
   international_economic_power:0 "[concept_international_economic_power]"
 
-  small_devaluation_25:0 "Increase money production (25%)"
-  small_revaluation_25:0 "Reduce money production (25%)"
+  small_devaluation_25:0 "Увеличить выпуск денег на 25%"
+  small_revaluation_25:0 "Уменьшить выпуск денег на 25%"
 
   devaluation_rate:0 "Devaluation Rate"
 
@@ -316,12 +315,12 @@
   left_time_revaluation:0 "Left time of revaluation [GetPlayer.MakeScope.ScriptValue('revaluation_on_time_scripted')] month(s)"
 
 
-  you_need_monetary_policy_tools:0 "You need Monetary Policy Tools Research"
-  overlord_currency_lord:0 "Monetary Parity Imposed by the Overlord"
+  you_need_monetary_policy_tools:0 "Нужно исследовать инструменты монетарной политики"
+  overlord_currency_lord:0 "Денежный паритет, установленный покровителем"
 
   subject_list:0 "Show Subject List"
 
-  national_debt:0 "National Debt"
+  national_debt:0 "Государственный Долг"
 
 central_bank_reserves:0 "Central Bank Reserves"
 
@@ -438,25 +437,25 @@ central_bank_reserves:0 "Central Bank Reserves"
 
   reference_currency_parity_with_national_currency_3:0 "1 [GetPlayer.GetCustom('currency_ISO_4217')] ([Country.GetCustom('currency_symbol')]) = [GetPlayer.MakeScope.ScriptValue('money_value_target_with_the_reference_currency')|+D] @gold!"
 
-  after_new_money_value_target_set:0 "A modification will result in exchange controls for 2 years."
+  after_new_money_value_target_set:0 "Изменение приведет к введению валютного контроля на 2 года."
 
-  import_export_value_in_currency_panel:0 "Import/Export Value by Currency Type"
-  import_export_value_in_currency_in_reeserve_panel:0 "Currency in the trade balance"
-  trade_routes:0 "Trade Routes"
-  in_currrency:0 "Value in Currrency"
-  in_gold:0 "Value in Gold"
+  import_export_value_in_currency_panel:0 "Стоимость импорта/экспорта по типам валют"
+  import_export_value_in_currency_in_reeserve_panel:0 "Валюта в торговом балансе"
+  trade_routes:0 "Торговые пути"
+  in_currrency:0 "Стоимость в валюте"
+  in_gold:0 "Цена в золоте"
 
-  CURRENCY:0 "Currency"
-  in_currency:0 "In Currency"
-  in_mettal:0 "In Metal"
+  CURRENCY:0 "Валюта"
+  in_currency:0 "В валюте"
+  in_mettal:0 "В драгметаллах"
 
-  national_debt_compared_gdp:0 "National Debt Compared GDP"
+  national_debt_compared_gdp:0 "Государственный долг в сравнении с ВВП"
   central_bank_debt_compared_gdp:0 "Central Bank Debt Compared GDP"
 
   central_bank_debt:0 "Central Bank Debt"
 
-  take_debt:0 "Take Debt"
-  refune_debt:0 "Refund Debt"
+  take_debt:0 "Взять кредит"
+  refune_debt:0 "Возврат кредита"
 
   SHOW_LIST:0 "Show List"
 
@@ -468,10 +467,10 @@ central_bank_reserves:0 "Central Bank Reserves"
   institution_economic_central_bank:0 "Economic and Central Bank Governance"
 
   #perf interface -> #trade_balance_in_gold_delta_text:0 "[GetPlayer.MakeScope.ScriptValue('trade_balance_in_gold_delta')|D=+] @gold!/Week"
-  trade_balance_in_gold_delta_text:0 "[GetPlayer.MakeScope.Var('trade_balance_in_gold_delta_fix').GetValue|D=+] [GetPlayer.GetCustom('monetary_system')]/Week"
+  trade_balance_in_gold_delta_text:0 "[GetPlayer.MakeScope.Var('trade_balance_in_gold_delta_fix').GetValue|D=+] [GetPlayer.GetCustom('monetary_system')] в неделю"
 
-  export_value_in_gold_week_fix:0 "([GetPlayer.MakeScope.Var('export_value_in_gold_week_fix').GetValue|D=+] [GetPlayer.GetCustom('monetary_system')] per month)"
-  import_value_in_gold_week_fix:0 "([GetPlayer.MakeScope.Var('import_value_in_gold_week_fix').GetValue|D=-] [GetPlayer.GetCustom('monetary_system')] per month)"
+  export_value_in_gold_week_fix:0 "([GetPlayer.MakeScope.Var('export_value_in_gold_week_fix').GetValue|D=+] [GetPlayer.GetCustom('monetary_system')] за месяц)"
+  import_value_in_gold_week_fix:0 "([GetPlayer.MakeScope.Var('import_value_in_gold_week_fix').GetValue|D=-] [GetPlayer.GetCustom('monetary_system')] за месяц)"
 
   #dinar
   dinar_02_name_currency:0 "[Localize('dinar_good')]  [Localize('dinar')]"
@@ -856,38 +855,38 @@ central_bank_reserves:0 "Central Bank Reserves"
 
 
 
-  player_no_systeme_based_on_gold:0 "Unlocked once the following rules are respected:\n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Not Has [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]"
+  player_no_systeme_based_on_gold:0 "Unlocked once the following rules are respected:\n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Does not have [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]"
 
-  player_no_gold_balance:0 "Unlocked once the following rules are respected:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Not Has [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]"
+  player_no_gold_balance:0 "Unlocked once the following rules are respected:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Does not have [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]"
 
-  player_no_national_debt:0 "Unlocked once the following rules are respected:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Not Has [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]"
+  player_no_national_debt:0 "Unlocked once the following rules are respected:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Does not have [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]"
 
-  player_no_monetary_policy:0 "Unlocked once the following rules are respected:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Not Has [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]"
+  player_no_monetary_policy:0 "Unlocked once the following rules are respected:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Does not have [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]"
 
-  player_currency_reserves_no:0 "Unlocked once the following rules are respected:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Not Has [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]"
+  player_currency_reserves_no:0 "Unlocked once the following rules are respected:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Does not have [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]"
 
-  player_no_exchange_rate_visibility:0 "Unlocked once the following rules are respected:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Not Has [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]"
+  player_no_exchange_rate_visibility:0 "Unlocked once the following rules are respected:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Does not have [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]"
 
-  player_no_country_credit_rating:0 "Unlocked once the following rules are respected:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Not Has [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_financial_center').GetName]"
+  player_no_country_credit_rating:0 "Unlocked once the following rules are respected:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Does not have [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_financial_center').GetName]"
 
-  player_no_transfert_currency_to_investement_pool:0 "Unlocked once the following rules are respected:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Not Has [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]"
+  player_no_transfert_currency_to_investement_pool:0 "Unlocked once the following rules are respected:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Does not have [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]"
 
-  player_no_gold_lent_to_other:0 "- [GetStaticModifier('has_financial_center').GetName]\n - Not Has [GetLawType('law_isolationism').GetName]  law"
+  player_no_gold_lent_to_other:0 "- [GetStaticModifier('has_financial_center').GetName]\n - Does not have [GetLawType('law_isolationism').GetName]  law"
 
-  player_no_gold_lent_to_us:0 "Unlocked once the following rules are respected:\n- Has its own [concept_market] \n- [GetStaticModifier('has_financial_center').GetName]\n - Not Has [GetLawType('law_isolationism').GetName] law"
+  player_no_gold_lent_to_us:0 "Unlocked once the following rules are respected:\n- Has its own [concept_market] \n- [GetStaticModifier('has_financial_center').GetName]\n - Does not have [GetLawType('law_isolationism').GetName] law"
 
   has_tech_national_stockpile_and_subject:0 "Unlocked once the following rules are respected:\n- Has its own [concept_market] \n- Has technology National Stockpile"
 
   not_has_tech_national_stockpile_and_subject:0 "Unlocked once the following rules are respected:\n- Has its own [concept_market] \n- Has technology National Stockpile"
 
-  market_owner_no_currency_exchange_panel_visibility:0 "Unlocked if the market owner respects the rules:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Not Has [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]"
-  player_no_currency_exchange_panel_visibility:0 "Unlocked if the player respects the rules:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Not Has [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]\n- Has Foreign Exchange Controls"
+  market_owner_no_currency_exchange_panel_visibility:0 "Unlocked if the market owner respects the rules:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Does not have [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]"
+  player_no_currency_exchange_panel_visibility:0 "Unlocked if the player respects the rules:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Does not have [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]\n- Has Foreign Exchange Controls"
 
-  market_owner_no_has_financial_center:0 "Unlocked if the market owner respects the rules:\n- [GetStaticModifier('has_financial_center').GetName]\n - Not Has [GetLawType('law_isolationism').GetName] law"
-  player_no_has_financial_center:0 "Unlocked if the player respects the rules:\n- [GetStaticModifier('has_financial_center').GetName]\n - Not Has [GetLawType('law_isolationism').GetName] law"
+  market_owner_no_has_financial_center:0 "Unlocked if the market owner respects the rules:\n- [GetStaticModifier('has_financial_center').GetName]\n - Does not have [GetLawType('law_isolationism').GetName] law"
+  player_no_has_financial_center:0 "Unlocked if the player respects the rules:\n- [GetStaticModifier('has_financial_center').GetName]\n - Does not have [GetLawType('law_isolationism').GetName] law"
 
-  market_owner_no_buy_sell_good_visibility:0 "Unlocked if the market owner respects the rules:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Not Has [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]\n- [GetStaticModifier('has_financial_center').GetName]\n- [GetStaticModifier('has_national_stockpile').GetName]"
-  player_no_buy_sell_good_visibility:0 "Unlocked if the player respects the rules:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Not Has [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]\n- [GetStaticModifier('has_financial_center').GetName]\n- [GetStaticModifier('has_national_stockpile').GetName]"
+  market_owner_no_buy_sell_good_visibility:0 "Unlocked if the market owner respects the rules:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Does not have [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]\n- [GetStaticModifier('has_financial_center').GetName]\n- [GetStaticModifier('has_national_stockpile').GetName]"
+  player_no_buy_sell_good_visibility:0 "Unlocked if the player respects the rules:\n- Has its own [concept_market] \n- Has [GetLawType('law_silver_standard').GetName] law, [GetLawType('law_bimetallism_standard').GetName] law,\n [GetLawType('law_gold_standard').GetName] law or [GetLawType('law_gold_exchange_standard').GetName] law\n - Does not have [GetLawType('law_isolationism').GetName] law\n- [GetStaticModifier('has_central_bank').GetName]\n- [GetStaticModifier('has_financial_center').GetName]\n- [GetStaticModifier('has_national_stockpile').GetName]"
 
   #####################################################################################################################
   #####################################################################################################################
@@ -965,7 +964,7 @@ central_bank_reserves:0 "Central Bank Reserves"
   financial_product_GOODS:0 "Financial Product"
   exports:0 "Exports"
   imports:0 "Imports"
-  trade_balance_fixe:0 "Current Account"
+  trade_balance_fixe:0 "Расчетный счет:"
   raw_material:0 "Raw Material"
   military_equipment:0 "Military Equipment"
 
@@ -988,16 +987,16 @@ central_bank_reserves:0 "Central Bank Reserves"
   railroad_cap_tx_pl:0 "Railroad Capitalization [GetPlayer.MakeScope.ScriptValue('railroad_stock_index')|+D]"
 
 
-  debt_in_national_currency_in_gold:0 "Import:  ([GetPlayer.MakeScope.ScriptValue('import_value_in_gold_week')|-=D] @gold!)"
+  debt_in_national_currency_in_gold:0 "Импорт:  ([GetPlayer.MakeScope.ScriptValue('import_value_in_gold_week')|-=D] @gold!)"
   debt_in_national_currency:0 "In Currency [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency')|+D] [GetPlayer.GetCustom('currency_symbol')]"
 
   # debt_in_national_currency:0 "Import in national currency [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency')|+D] [GetPlayer.GetCustom('currency_symbol')]"
 
-  total_export_trade_routes:0 "Export Trade Routes"
-  export_to_gold_no_currency:0 "Export in [GetPlayer.GetCustom('monetary_system_name')] (Only)"
+  total_export_trade_routes:0 "Торговые пути экспорта"
+  export_to_gold_no_currency:0 "Экспорт в [GetPlayer.GetCustom('monetary_system_name')]"
 
-  total_import_trade_routes:0 "Import Trade Routes"
-  import_from_gold_no_currency:0 "Import in [GetPlayer.GetCustom('monetary_system_name')] (Only)"
+  total_import_trade_routes:0 "Торговые пути импорта"
+  import_from_gold_no_currency:0 "Импорт в [GetPlayer.GetCustom('monetary_system_name')]"
 
 
   AAA:0 "#Y #i AAA #!#!"
@@ -1177,17 +1176,17 @@ central_bank_reserves:0 "Central Bank Reserves"
 
   financial_product_trasury_bond:0 "[concept_financial_product_bond]"
   financial_product_industrial:0 "[concept_financial_product_industrial]"
-  transfer_government_treasury_to_central_bank_metal_reserves:0 "Transfer Government Treasury to Central Bank"
+  transfer_government_treasury_to_central_bank_metal_reserves:0 "Перевод средств казначейства в Центральный банк"
 
   transfer_government_treasury_to_central_bank_metal_reserves_desc:0 "[GetPlayer.MakeScope.Var('transfer_gold_to_central_bank_metal_reserves').GetValue|D] [GetPlayer.GetCustom('currency_symbol')] eq. [GetPlayer.MakeScope.ScriptValue('transfer_gold_to_central_bank_metal_reserves_sc')|D] [GetPlayer.GetCustom('monetary_system')]"
 
-  global_gold_production:0 "Global Gold Production"
-  global_silver_production:0 "Global Silver Production"
-  gold_price_in_silver:0 "Gold Price in Silver"
-  silver_price_in_gold:0 "Silver Price in Gold"
+  global_gold_production:0 "Мировая добыча золота"
+  global_silver_production:0 "Мировая добыча серебра"
+  gold_price_in_silver:0 "Цена золота в серебре"
+  silver_price_in_gold:0 "Цена серебра в золоте"
 
-  global_metal_prices:0 "Global Metal Prices & Monetary system projection"
-  monetary_systeme:0 "Monetary system"
+  global_metal_prices:0 "Мировые цены на металлы и прогноз денежной системы"
+  monetary_systeme:0 "Монетарная система"
 
   grain_global_price:0 "Grain global price"
   wood_global_price:0 "Wood global price"
@@ -1265,17 +1264,17 @@ central_bank_reserves:0 "Central Bank Reserves"
   from_gold_reserves:0 "(From gold reserves)"
   to_the_central_bank:0 "(To the central bank)"
 
-  debt_issued_relative_GDP_2:0 "[GetPlayer.MakeScope.ScriptValue('debt_issued_relative_GDP')|D] [GetPlayer.GetCustom('monetary_system')] or [GetPlayer.MakeScope.Var('debt_issued_relative_GDP_percentage').GetValue|%|] of GDP"
+  debt_issued_relative_GDP_2:0 "[GetPlayer.MakeScope.ScriptValue('debt_issued_relative_GDP')|D] [GetPlayer.GetCustom('monetary_system')] или [GetPlayer.MakeScope.Var('debt_issued_relative_GDP_percentage').GetValue|%|] от ВВП"
 
-  debt_issued_relative_GDP_3:0 "Production of [GetPlayer.MakeScope.ScriptValue('debt_issued_relative_GDP_in_currency')|D] [GetPlayer.GetCustom('currency_good')] and [GetPlayer.MakeScope.ScriptValue('bond_creation_by_debt')|D] @bond!"
+  debt_issued_relative_GDP_3:0 "Создаст [GetPlayer.MakeScope.ScriptValue('debt_issued_relative_GDP_in_currency')|D] [GetPlayer.GetCustom('currency_good')] и [GetPlayer.MakeScope.ScriptValue('bond_creation_by_debt')|D] @bond!"
 
-  contract_debt_txt:0 "You will contract a debt of [GetPlayer.MakeScope.ScriptValue('debt_issued_relative_GDP_in_currency')|+D] [GetPlayer.GetCustom('currency_symbol')] equivalent of [GetPlayer.MakeScope.ScriptValue('debt_issued_relative_GDP')|+D] [GetPlayer.GetCustom('monetary_system')]   to your central bank, there will be a production of [GetPlayer.MakeScope.ScriptValue('bond_creation_by_debt')|+D] @bond!. This represents a debt of [GetPlayer.MakeScope.Var('debt_issued_relative_GDP_percentage').GetValue|%|+] of GDP, the interest will be paid annually to your central bank."
+  contract_debt_txt:0 "Вы получите долг в размере [GetPlayer.MakeScope.ScriptValue('debt_issued_relative_GDP_in_currency')|+D] [GetPlayer.GetCustom('currency_symbol')] равный [GetPlayer.MakeScope.ScriptValue('debt_issued_relative_GDP')|+D] [GetPlayer.GetCustom('monetary_system')] \nВы также получите [GetPlayer.MakeScope.ScriptValue('bond_creation_by_debt')|+D] @bond!. Ожидается, что долг займет [GetPlayer.MakeScope.Var('debt_issued_relative_GDP_percentage').GetValue|%|+] от ВВП, проценты будут ежегодно выплачиваться вашему центральному банку."
 
   base_rate_percentage_txt:0 "A return of #v [GetPlayer.MakeScope.ScriptValue('pool_growth_rate_thanks_to_borrowing')|%|]#! of the investment pool is earned by the investment pool every year, or [GetPlayer.MakeScope.ScriptValue('private_bank_borrowings_year')|+D] [GetMetaPlayer.GetPlayedOrObservedCountry.GetCustom('currency_symbol')]. The base rate makes it possible to adjust the yield."
 
   base_rate_percentage:0 "Base Rate"
 
-  percentage_of_gdp:0 "Percentage of GDP"
+  percentage_of_gdp:0 "Процент от ВВП"
 
   gold_to_currency:0 "1 [GetPlayer.GetCustom('monetary_system')] = [GetPlayer.MakeScope.ScriptValue('gold_value_rapported_inflation')|+D] [GetMetaPlayer.GetPlayedOrObservedCountry.GetCustom('currency_symbol')]"
   currency_to_gold:0 "1 [GetMetaPlayer.GetPlayedOrObservedCountry.GetCustom('currency_symbol')] = [GetPlayer.MakeScope.ScriptValue('money_value_rapported_inflation')|+D] [GetPlayer.GetCustom('monetary_system')]"
@@ -1297,10 +1296,10 @@ central_bank_reserves:0 "Central Bank Reserves"
   central_bank_interest_refund_per_year_text_3:0 "Total Interest"
   central_bank_interest_refund_per_year_text_4:0 "[GetPlayer.MakeScope.Var('gold_loaned_to_central_bank_historic').GetValue|D+] [GetPlayer.GetCustom('monetary_system')]"
 
-  refund_debt_txt:0 "You will pay [GetPlayer.MakeScope.Var('refund_credit_at_central_bank').GetValue|D] [GetPlayer.GetCustom('currency_symbol')] to your central bank to settle your debt. This will result in a recalculation of your monthly interest rate, reducing your monthly payments."
+  refund_debt_txt:0 "Вы заплатите [GetPlayer.MakeScope.Var('refund_credit_at_central_bank').GetValue|D] [GetPlayer.GetCustom('currency_symbol')] в центральный банк для погашения задолженности. Это приведет к перерасчету ежемесячной процентной ставки, что уменьшит ваши ежемесячные платежи."
 
   refund_credit_at_central_bank:0 "Refund Credit at Central Bank"
-  take:0 "Take"
+  take:0 "Получить"
   refund:0 "Refund"
   refund_all:0 "Refund All"
 
@@ -2470,9 +2469,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #gold
   gold_03_name_currency:0 "[GetPlayer.GetCustom('monetary_system')] [GetPlayer.GetCustom('monetary_system_name')]"
 
-  gold_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_gold')|+D]"
-  gold_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_gold')|+D]"
-  gold_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('delta_in_gold_sc')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  gold_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_gold')|+D]"
+  gold_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_gold')|+D]"
+  gold_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('delta_in_gold_sc')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   gold_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_gold_sc')|D]#! [GetPlayer.GetCustom('monetary_system')]"
   gold_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_gold')|=-D] [GetPlayer.GetCustom('monetary_system')])"
@@ -2490,9 +2489,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #dinar
   dinar_03_name_currency:0 "[Localize('dinar_good')] [Localize('dinar_c')]"
 
-  dinar_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_dinar')|+D]"
-  dinar_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_dinar')|+D]"
-  dinar_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('dinar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  dinar_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_dinar')|+D]"
+  dinar_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_dinar')|+D]"
+  dinar_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('dinar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   dinar_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_dinar_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   dinar_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_dinar')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2508,9 +2507,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #dinar_algerian_dinar
   dinar_algerian_dinar_03_name_currency:0 "[Localize('dinar_algerian_dinar_good')] [Localize('dinar_algerian_dinar_c')]"
 
-  dinar_algerian_dinar_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_algerian_dinar')|+D]"
-  dinar_algerian_dinar_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_algerian_dinar')|+D]"
-  dinar_algerian_dinar_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('dinar_algerian_dinar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  dinar_algerian_dinar_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_algerian_dinar')|+D]"
+  dinar_algerian_dinar_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_algerian_dinar')|+D]"
+  dinar_algerian_dinar_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('dinar_algerian_dinar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   dinar_algerian_dinar_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_dinar_algerian_dinar_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   dinar_algerian_dinar_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_dinar_algerian_dinar')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2526,9 +2525,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #dinar_iraqi_dinar
   dinar_iraqi_dinar_03_name_currency:0 "[Localize('dinar_iraqi_dinar_good')] [Localize('dinar_iraqi_dinar_c')]"
 
-  dinar_iraqi_dinar_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_iraqi_dinar')|+D]"
-  dinar_iraqi_dinar_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_iraqi_dinar')|+D]"
-  dinar_iraqi_dinar_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('dinar_iraqi_dinar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  dinar_iraqi_dinar_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_iraqi_dinar')|+D]"
+  dinar_iraqi_dinar_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_iraqi_dinar')|+D]"
+  dinar_iraqi_dinar_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('dinar_iraqi_dinar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   dinar_iraqi_dinar_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_dinar_iraqi_dinar_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   dinar_iraqi_dinar_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_dinar_iraqi_dinar')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2544,9 +2543,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #dinar_libyan_dinar
   dinar_libyan_dinar_03_name_currency:0 "[Localize('dinar_libyan_dinar_good')] [Localize('dinar_libyan_dinar_c')]"
 
-  dinar_libyan_dinar_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_libyan_dinar')|+D]"
-  dinar_libyan_dinar_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_libyan_dinar')|+D]"
-  dinar_libyan_dinar_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('dinar_libyan_dinar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  dinar_libyan_dinar_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_libyan_dinar')|+D]"
+  dinar_libyan_dinar_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_libyan_dinar')|+D]"
+  dinar_libyan_dinar_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('dinar_libyan_dinar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   dinar_libyan_dinar_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_dinar_libyan_dinar_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   dinar_libyan_dinar_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_dinar_libyan_dinar')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2562,9 +2561,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #dinar_moroccan_dirham
   dinar_moroccan_dirham_03_name_currency:0 "[Localize('dinar_moroccan_dirham_good')] [Localize('dinar_moroccan_dirham_c')]"
 
-  dinar_moroccan_dirham_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_moroccan_dirham')|+D]"
-  dinar_moroccan_dirham_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_moroccan_dirham')|+D]"
-  dinar_moroccan_dirham_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('dinar_moroccan_dirham_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  dinar_moroccan_dirham_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_moroccan_dirham')|+D]"
+  dinar_moroccan_dirham_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_moroccan_dirham')|+D]"
+  dinar_moroccan_dirham_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('dinar_moroccan_dirham_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   dinar_moroccan_dirham_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_dinar_moroccan_dirham_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   dinar_moroccan_dirham_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_dinar_moroccan_dirham')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2580,9 +2579,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #dinar_omanian_rial
   dinar_omanian_rial_03_name_currency:0 "[Localize('dinar_omanian_rial_good')] [Localize('dinar_omanian_rial_c')]"
 
-  dinar_omanian_rial_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_omanian_rial')|+D]"
-  dinar_omanian_rial_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_omanian_rial')|+D]"
-  dinar_omanian_rial_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('dinar_omanian_rial_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  dinar_omanian_rial_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_omanian_rial')|+D]"
+  dinar_omanian_rial_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_omanian_rial')|+D]"
+  dinar_omanian_rial_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('dinar_omanian_rial_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   dinar_omanian_rial_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_dinar_omanian_rial_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   dinar_omanian_rial_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_dinar_omanian_rial')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2598,9 +2597,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #dinar_qiran
   dinar_qiran_03_name_currency:0 "[Localize('dinar_qiran_good')] [Localize('dinar_qiran_c')]"
 
-  dinar_qiran_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_qiran')|+D]"
-  dinar_qiran_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_qiran')|+D]"
-  dinar_qiran_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('dinar_qiran_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  dinar_qiran_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_qiran')|+D]"
+  dinar_qiran_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_qiran')|+D]"
+  dinar_qiran_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('dinar_qiran_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   dinar_qiran_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_dinar_qiran_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   dinar_qiran_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_dinar_qiran')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2616,9 +2615,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #dinar_saudi_riyal
   dinar_saudi_riyal_03_name_currency:0 "[Localize('dinar_saudi_riyal_good')] [Localize('dinar_saudi_riyal_c')]"
 
-  dinar_saudi_riyal_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_saudi_riyal')|+D]"
-  dinar_saudi_riyal_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_saudi_riyal')|+D]"
-  dinar_saudi_riyal_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('dinar_saudi_riyal_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  dinar_saudi_riyal_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_saudi_riyal')|+D]"
+  dinar_saudi_riyal_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_saudi_riyal')|+D]"
+  dinar_saudi_riyal_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('dinar_saudi_riyal_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   dinar_saudi_riyal_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_dinar_saudi_riyal_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   dinar_saudi_riyal_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_dinar_saudi_riyal')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2634,9 +2633,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #dinar_serbian_dinar
   dinar_serbian_dinar_03_name_currency:0 "[Localize('dinar_serbian_dinar_good')] [Localize('dinar_serbian_dinar_c')]"
 
-  dinar_serbian_dinar_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_serbian_dinar')|+D]"
-  dinar_serbian_dinar_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_serbian_dinar')|+D]"
-  dinar_serbian_dinar_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('dinar_serbian_dinar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  dinar_serbian_dinar_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_serbian_dinar')|+D]"
+  dinar_serbian_dinar_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_serbian_dinar')|+D]"
+  dinar_serbian_dinar_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('dinar_serbian_dinar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   dinar_serbian_dinar_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_dinar_serbian_dinar_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   dinar_serbian_dinar_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_dinar_serbian_dinar')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2652,9 +2651,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #dinar_tunisian_dinar
   dinar_tunisian_dinar_03_name_currency:0 "[Localize('dinar_tunisian_dinar_good')] [Localize('dinar_tunisian_dinar_c')]"
 
-  dinar_tunisian_dinar_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_tunisian_dinar')|+D]"
-  dinar_tunisian_dinar_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_tunisian_dinar')|+D]"
-  dinar_tunisian_dinar_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('dinar_tunisian_dinar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  dinar_tunisian_dinar_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_tunisian_dinar')|+D]"
+  dinar_tunisian_dinar_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_tunisian_dinar')|+D]"
+  dinar_tunisian_dinar_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('dinar_tunisian_dinar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   dinar_tunisian_dinar_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_dinar_tunisian_dinar_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   dinar_tunisian_dinar_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_dinar_tunisian_dinar')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2670,9 +2669,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #dinar_yugoslav_dinar
   dinar_yugoslav_dinar_03_name_currency:0 "[Localize('dinar_yugoslav_dinar_good')] [Localize('dinar_yugoslav_dinar_c')]"
 
-  dinar_yugoslav_dinar_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_yugoslav_dinar')|+D]"
-  dinar_yugoslav_dinar_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_yugoslav_dinar')|+D]"
-  dinar_yugoslav_dinar_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('dinar_yugoslav_dinar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  dinar_yugoslav_dinar_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_dinar_yugoslav_dinar')|+D]"
+  dinar_yugoslav_dinar_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_dinar_yugoslav_dinar')|+D]"
+  dinar_yugoslav_dinar_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('dinar_yugoslav_dinar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   dinar_yugoslav_dinar_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_dinar_yugoslav_dinar_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   dinar_yugoslav_dinar_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_dinar_yugoslav_dinar')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2688,9 +2687,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #dollar_australian_dollar
   dollar_australian_dollar_03_name_currency:0 "[Localize('dollar_australian_dollar_good')] [Localize('dollar_australian_dollar_c')]"
 
-  dollar_australian_dollar_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_dollar_australian_dollar')|+D]"
-  dollar_australian_dollar_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_dollar_australian_dollar')|+D]"
-  dollar_australian_dollar_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('dollar_australian_dollar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  dollar_australian_dollar_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_dollar_australian_dollar')|+D]"
+  dollar_australian_dollar_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_dollar_australian_dollar')|+D]"
+  dollar_australian_dollar_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('dollar_australian_dollar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   dollar_australian_dollar_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_dollar_australian_dollar_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   dollar_australian_dollar_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_dollar_australian_dollar')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2706,9 +2705,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #dollar_canadian_dollar
   dollar_canadian_dollar_03_name_currency:0 "[Localize('dollar_canadian_dollar_good')] [Localize('dollar_canadian_dollar_c')]"
 
-  dollar_canadian_dollar_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_dollar_canadian_dollar')|+D]"
-  dollar_canadian_dollar_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_dollar_canadian_dollar')|+D]"
-  dollar_canadian_dollar_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('dollar_canadian_dollar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  dollar_canadian_dollar_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_dollar_canadian_dollar')|+D]"
+  dollar_canadian_dollar_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_dollar_canadian_dollar')|+D]"
+  dollar_canadian_dollar_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('dollar_canadian_dollar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   dollar_canadian_dollar_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_dollar_canadian_dollar_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   dollar_canadian_dollar_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_dollar_canadian_dollar')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2724,9 +2723,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #dollar_caribbean_dollar
   dollar_caribbean_dollar_03_name_currency:0 "[Localize('dollar_caribbean_dollar_good')] [Localize('dollar_caribbean_dollar_c')]"
 
-  dollar_caribbean_dollar_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_dollar_caribbean_dollar')|+D]"
-  dollar_caribbean_dollar_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_dollar_caribbean_dollar')|+D]"
-  dollar_caribbean_dollar_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('dollar_caribbean_dollar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  dollar_caribbean_dollar_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_dollar_caribbean_dollar')|+D]"
+  dollar_caribbean_dollar_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_dollar_caribbean_dollar')|+D]"
+  dollar_caribbean_dollar_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('dollar_caribbean_dollar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   dollar_caribbean_dollar_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_dollar_caribbean_dollar_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   dollar_caribbean_dollar_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_dollar_caribbean_dollar')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2742,9 +2741,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #dollar_confederate_states_dollar
   dollar_confederate_states_dollar_03_name_currency:0 "[Localize('dollar_confederate_states_dollar_good')] [Localize('dollar_confederate_states_dollar_c')]"
 
-  dollar_confederate_states_dollar_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_dollar_confederate_states_dollar')|+D]"
-  dollar_confederate_states_dollar_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_dollar_confederate_states_dollar')|+D]"
-  dollar_confederate_states_dollar_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('dollar_confederate_states_dollar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  dollar_confederate_states_dollar_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_dollar_confederate_states_dollar')|+D]"
+  dollar_confederate_states_dollar_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_dollar_confederate_states_dollar')|+D]"
+  dollar_confederate_states_dollar_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('dollar_confederate_states_dollar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   dollar_confederate_states_dollar_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_dollar_confederate_states_dollar_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   dollar_confederate_states_dollar_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_dollar_confederate_states_dollar')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2760,9 +2759,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #dollar_liberian_dollar
   dollar_liberian_dollar_03_name_currency:0 "[Localize('dollar_liberian_dollar_good')] [Localize('dollar_liberian_dollar_c')]"
 
-  dollar_liberian_dollar_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_dollar_liberian_dollar')|+D]"
-  dollar_liberian_dollar_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_dollar_liberian_dollar')|+D]"
-  dollar_liberian_dollar_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('dollar_liberian_dollar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  dollar_liberian_dollar_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_dollar_liberian_dollar')|+D]"
+  dollar_liberian_dollar_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_dollar_liberian_dollar')|+D]"
+  dollar_liberian_dollar_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('dollar_liberian_dollar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   dollar_liberian_dollar_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_dollar_liberian_dollar_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   dollar_liberian_dollar_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_dollar_liberian_dollar')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2778,9 +2777,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #dollar_new_zealand_dollar
   dollar_new_zealand_dollar_03_name_currency:0 "[Localize('dollar_new_zealand_dollar_good')] [Localize('dollar_new_zealand_dollar_c')]"
 
-  dollar_new_zealand_dollar_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_dollar_new_zealand_dollar')|+D]"
-  dollar_new_zealand_dollar_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_dollar_new_zealand_dollar')|+D]"
-  dollar_new_zealand_dollar_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('dollar_new_zealand_dollar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  dollar_new_zealand_dollar_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_dollar_new_zealand_dollar')|+D]"
+  dollar_new_zealand_dollar_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_dollar_new_zealand_dollar')|+D]"
+  dollar_new_zealand_dollar_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('dollar_new_zealand_dollar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   dollar_new_zealand_dollar_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_dollar_new_zealand_dollar_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   dollar_new_zealand_dollar_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_dollar_new_zealand_dollar')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2796,9 +2795,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #dollar_sierra_leonean_dollar
   dollar_sierra_leonean_dollar_03_name_currency:0 "[Localize('dollar_sierra_leonean_dollar_good')] [Localize('dollar_sierra_leonean_dollar_c')]"
 
-  dollar_sierra_leonean_dollar_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_dollar_sierra_leonean_dollar')|+D]"
-  dollar_sierra_leonean_dollar_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_dollar_sierra_leonean_dollar')|+D]"
-  dollar_sierra_leonean_dollar_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('dollar_sierra_leonean_dollar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  dollar_sierra_leonean_dollar_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_dollar_sierra_leonean_dollar')|+D]"
+  dollar_sierra_leonean_dollar_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_dollar_sierra_leonean_dollar')|+D]"
+  dollar_sierra_leonean_dollar_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('dollar_sierra_leonean_dollar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   dollar_sierra_leonean_dollar_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_dollar_sierra_leonean_dollar_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   dollar_sierra_leonean_dollar_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_dollar_sierra_leonean_dollar')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2814,9 +2813,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #dollar_united_states_dollar
   dollar_united_states_dollar_03_name_currency:0 "[Localize('dollar_united_states_dollar_good')] [Localize('dollar_united_states_dollar_c')]"
 
-  dollar_united_states_dollar_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_dollar_united_states_dollar')|+D]"
-  dollar_united_states_dollar_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_dollar_united_states_dollar')|+D]"
-  dollar_united_states_dollar_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('dollar_united_states_dollar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  dollar_united_states_dollar_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_dollar_united_states_dollar')|+D]"
+  dollar_united_states_dollar_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_dollar_united_states_dollar')|+D]"
+  dollar_united_states_dollar_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('dollar_united_states_dollar_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   dollar_united_states_dollar_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_dollar_united_states_dollar_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   dollar_united_states_dollar_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_dollar_united_states_dollar')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2832,9 +2831,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #eco_ariary
   eco_ariary_03_name_currency:0 "[Localize('eco_ariary_good')] [Localize('eco_ariary_c')]"
 
-  eco_ariary_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_eco_ariary')|+D]"
-  eco_ariary_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_eco_ariary')|+D]"
-  eco_ariary_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('eco_ariary_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  eco_ariary_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_eco_ariary')|+D]"
+  eco_ariary_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_eco_ariary')|+D]"
+  eco_ariary_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('eco_ariary_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   eco_ariary_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_eco_ariary_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   eco_ariary_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_eco_ariary')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2850,9 +2849,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #eco_central_african_eco
   eco_central_african_eco_03_name_currency:0 "[Localize('eco_central_african_eco_good')] [Localize('eco_central_african_eco_c')]"
 
-  eco_central_african_eco_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_eco_central_african_eco')|+D]"
-  eco_central_african_eco_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_eco_central_african_eco')|+D]"
-  eco_central_african_eco_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('eco_central_african_eco_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  eco_central_african_eco_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_eco_central_african_eco')|+D]"
+  eco_central_african_eco_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_eco_central_african_eco')|+D]"
+  eco_central_african_eco_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('eco_central_african_eco_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   eco_central_african_eco_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_eco_central_african_eco_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   eco_central_african_eco_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_eco_central_african_eco')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2868,9 +2867,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #eco_east_african_eco
   eco_east_african_eco_03_name_currency:0 "[Localize('eco_east_african_eco_good')] [Localize('eco_east_african_eco_c')]"
 
-  eco_east_african_eco_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_eco_east_african_eco')|+D]"
-  eco_east_african_eco_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_eco_east_african_eco')|+D]"
-  eco_east_african_eco_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('eco_east_african_eco_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  eco_east_african_eco_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_eco_east_african_eco')|+D]"
+  eco_east_african_eco_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_eco_east_african_eco')|+D]"
+  eco_east_african_eco_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('eco_east_african_eco_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   eco_east_african_eco_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_eco_east_african_eco_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   eco_east_african_eco_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_eco_east_african_eco')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2886,9 +2885,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #eco_ethiopian_birr
   eco_ethiopian_birr_03_name_currency:0 "[Localize('eco_ethiopian_birr_good')] [Localize('eco_ethiopian_birr_c')]"
 
-  eco_ethiopian_birr_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_eco_ethiopian_birr')|+D]"
-  eco_ethiopian_birr_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_eco_ethiopian_birr')|+D]"
-  eco_ethiopian_birr_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('eco_ethiopian_birr_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  eco_ethiopian_birr_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_eco_ethiopian_birr')|+D]"
+  eco_ethiopian_birr_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_eco_ethiopian_birr')|+D]"
+  eco_ethiopian_birr_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('eco_ethiopian_birr_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   eco_ethiopian_birr_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_eco_ethiopian_birr_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   eco_ethiopian_birr_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_eco_ethiopian_birr')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2904,9 +2903,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #eco_ghanaian_pound
   eco_ghanaian_pound_03_name_currency:0 "[Localize('eco_ghanaian_pound_good')] [Localize('eco_ghanaian_pound_c')]"
 
-  eco_ghanaian_pound_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_eco_ghanaian_pound')|+D]"
-  eco_ghanaian_pound_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_eco_ghanaian_pound')|+D]"
-  eco_ghanaian_pound_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('eco_ghanaian_pound_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  eco_ghanaian_pound_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_eco_ghanaian_pound')|+D]"
+  eco_ghanaian_pound_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_eco_ghanaian_pound')|+D]"
+  eco_ghanaian_pound_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('eco_ghanaian_pound_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   eco_ghanaian_pound_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_eco_ghanaian_pound_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   eco_ghanaian_pound_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_eco_ghanaian_pound')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2922,9 +2921,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #eco_nigerian_naira
   eco_nigerian_naira_03_name_currency:0 "[Localize('eco_nigerian_naira_good')] [Localize('eco_nigerian_naira_c')]"
 
-  eco_nigerian_naira_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_eco_nigerian_naira')|+D]"
-  eco_nigerian_naira_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_eco_nigerian_naira')|+D]"
-  eco_nigerian_naira_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('eco_nigerian_naira_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  eco_nigerian_naira_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_eco_nigerian_naira')|+D]"
+  eco_nigerian_naira_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_eco_nigerian_naira')|+D]"
+  eco_nigerian_naira_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('eco_nigerian_naira_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   eco_nigerian_naira_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_eco_nigerian_naira_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   eco_nigerian_naira_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_eco_nigerian_naira')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2940,9 +2939,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #eco_south_african_rand
   eco_south_african_rand_03_name_currency:0 "[Localize('eco_south_african_rand_good')] [Localize('eco_south_african_rand_c')]"
 
-  eco_south_african_rand_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_eco_south_african_rand')|+D]"
-  eco_south_african_rand_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_eco_south_african_rand')|+D]"
-  eco_south_african_rand_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('eco_south_african_rand_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  eco_south_african_rand_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_eco_south_african_rand')|+D]"
+  eco_south_african_rand_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_eco_south_african_rand')|+D]"
+  eco_south_african_rand_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('eco_south_african_rand_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   eco_south_african_rand_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_eco_south_african_rand_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   eco_south_african_rand_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_eco_south_african_rand')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2958,9 +2957,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #eco_tuareg_ouguiya
   eco_tuareg_ouguiya_03_name_currency:0 "[Localize('eco_tuareg_ouguiya_good')] [Localize('eco_tuareg_ouguiya_c')]"
 
-  eco_tuareg_ouguiya_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_eco_tuareg_ouguiya')|+D]"
-  eco_tuareg_ouguiya_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_eco_tuareg_ouguiya')|+D]"
-  eco_tuareg_ouguiya_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('eco_tuareg_ouguiya_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  eco_tuareg_ouguiya_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_eco_tuareg_ouguiya')|+D]"
+  eco_tuareg_ouguiya_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_eco_tuareg_ouguiya')|+D]"
+  eco_tuareg_ouguiya_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('eco_tuareg_ouguiya_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   eco_tuareg_ouguiya_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_eco_tuareg_ouguiya_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   eco_tuareg_ouguiya_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_eco_tuareg_ouguiya')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2976,9 +2975,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #eco_west_african_eco
   eco_west_african_eco_03_name_currency:0 "[Localize('eco_west_african_eco_good')] [Localize('eco_west_african_eco_c')]"
 
-  eco_west_african_eco_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_eco_west_african_eco')|+D]"
-  eco_west_african_eco_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_eco_west_african_eco')|+D]"
-  eco_west_african_eco_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('eco_west_african_eco_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  eco_west_african_eco_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_eco_west_african_eco')|+D]"
+  eco_west_african_eco_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_eco_west_african_eco')|+D]"
+  eco_west_african_eco_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('eco_west_african_eco_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   eco_west_african_eco_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_eco_west_african_eco_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   eco_west_african_eco_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_eco_west_african_eco')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -2994,9 +2993,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #franc_belgian_franc
   franc_belgian_franc_03_name_currency:0 "[Localize('franc_belgian_franc_good')] [Localize('franc_belgian_franc_c')]"
 
-  franc_belgian_franc_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_franc_belgian_franc')|+D]"
-  franc_belgian_franc_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_franc_belgian_franc')|+D]"
-  franc_belgian_franc_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('franc_belgian_franc_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  franc_belgian_franc_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_franc_belgian_franc')|+D]"
+  franc_belgian_franc_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_franc_belgian_franc')|+D]"
+  franc_belgian_franc_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('franc_belgian_franc_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   franc_belgian_franc_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_franc_belgian_franc_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   franc_belgian_franc_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_franc_belgian_franc')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3012,9 +3011,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #franc_french_franc
   franc_french_franc_03_name_currency:0 "[Localize('franc_french_franc_good')] [Localize('franc_french_franc_c')]"
 
-  franc_french_franc_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_franc_french_franc')|+D]"
-  franc_french_franc_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_franc_french_franc')|+D]"
-  franc_french_franc_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('franc_french_franc_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  franc_french_franc_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_franc_french_franc')|+D]"
+  franc_french_franc_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_franc_french_franc')|+D]"
+  franc_french_franc_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('franc_french_franc_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   franc_french_franc_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_franc_french_franc_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   franc_french_franc_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_franc_french_franc')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3030,9 +3029,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #franc_luxembourgish_franc
   franc_luxembourgish_franc_03_name_currency:0 "[Localize('franc_luxembourgish_franc_good')] [Localize('franc_luxembourgish_franc_c')]"
 
-  franc_luxembourgish_franc_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_franc_luxembourgish_franc')|+D]"
-  franc_luxembourgish_franc_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_franc_luxembourgish_franc')|+D]"
-  franc_luxembourgish_franc_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('franc_luxembourgish_franc_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  franc_luxembourgish_franc_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_franc_luxembourgish_franc')|+D]"
+  franc_luxembourgish_franc_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_franc_luxembourgish_franc')|+D]"
+  franc_luxembourgish_franc_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('franc_luxembourgish_franc_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   franc_luxembourgish_franc_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_franc_luxembourgish_franc_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   franc_luxembourgish_franc_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_franc_luxembourgish_franc')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3048,9 +3047,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #franc_swiss_franc
   franc_swiss_franc_03_name_currency:0 "[Localize('franc_swiss_franc_good')] [Localize('franc_swiss_franc_c')]"
 
-  franc_swiss_franc_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_franc_swiss_franc')|+D]"
-  franc_swiss_franc_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_franc_swiss_franc')|+D]"
-  franc_swiss_franc_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('franc_swiss_franc_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  franc_swiss_franc_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_franc_swiss_franc')|+D]"
+  franc_swiss_franc_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_franc_swiss_franc')|+D]"
+  franc_swiss_franc_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('franc_swiss_franc_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   franc_swiss_franc_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_franc_swiss_franc_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   franc_swiss_franc_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_franc_swiss_franc')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3066,9 +3065,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #gulden
   gulden_03_name_currency:0 "[Localize('gulden_good')] [Localize('gulden_c')]"
 
-  gulden_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_gulden')|+D]"
-  gulden_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_gulden')|+D]"
-  gulden_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('gulden_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  gulden_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_gulden')|+D]"
+  gulden_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_gulden')|+D]"
+  gulden_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('gulden_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   gulden_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_gulden_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   gulden_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_gulden')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3084,9 +3083,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #gulden_bavarian_gulden
   gulden_bavarian_gulden_03_name_currency:0 "[Localize('gulden_bavarian_gulden_good')] [Localize('gulden_bavarian_gulden_c')]"
 
-  gulden_bavarian_gulden_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_gulden_bavarian_gulden')|+D]"
-  gulden_bavarian_gulden_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_gulden_bavarian_gulden')|+D]"
-  gulden_bavarian_gulden_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('gulden_bavarian_gulden_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  gulden_bavarian_gulden_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_gulden_bavarian_gulden')|+D]"
+  gulden_bavarian_gulden_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_gulden_bavarian_gulden')|+D]"
+  gulden_bavarian_gulden_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('gulden_bavarian_gulden_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   gulden_bavarian_gulden_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_gulden_bavarian_gulden_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   gulden_bavarian_gulden_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_gulden_bavarian_gulden')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3102,9 +3101,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #gulden_florin
   gulden_florin_03_name_currency:0 "[Localize('gulden_florin_good')] [Localize('gulden_florin_c')]"
 
-  gulden_florin_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_gulden_florin')|+D]"
-  gulden_florin_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_gulden_florin')|+D]"
-  gulden_florin_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('gulden_florin_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  gulden_florin_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_gulden_florin')|+D]"
+  gulden_florin_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_gulden_florin')|+D]"
+  gulden_florin_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('gulden_florin_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   gulden_florin_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_gulden_florin_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   gulden_florin_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_gulden_florin')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3120,9 +3119,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #gulden_hungarian_forint
   gulden_hungarian_forint_03_name_currency:0 "[Localize('gulden_hungarian_forint_good')] [Localize('gulden_hungarian_forint_c')]"
 
-  gulden_hungarian_forint_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_gulden_hungarian_forint')|+D]"
-  gulden_hungarian_forint_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_gulden_hungarian_forint')|+D]"
-  gulden_hungarian_forint_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('gulden_hungarian_forint_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  gulden_hungarian_forint_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_gulden_hungarian_forint')|+D]"
+  gulden_hungarian_forint_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_gulden_hungarian_forint')|+D]"
+  gulden_hungarian_forint_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('gulden_hungarian_forint_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   gulden_hungarian_forint_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_gulden_hungarian_forint_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   gulden_hungarian_forint_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_gulden_hungarian_forint')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3138,9 +3137,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #gulden_indies_guilder
   gulden_indies_guilder_03_name_currency:0 "[Localize('gulden_indies_guilder_good')] [Localize('gulden_indies_guilder_c')]"
 
-  gulden_indies_guilder_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_gulden_indies_guilder')|+D]"
-  gulden_indies_guilder_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_gulden_indies_guilder')|+D]"
-  gulden_indies_guilder_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('gulden_indies_guilder_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  gulden_indies_guilder_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_gulden_indies_guilder')|+D]"
+  gulden_indies_guilder_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_gulden_indies_guilder')|+D]"
+  gulden_indies_guilder_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('gulden_indies_guilder_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   gulden_indies_guilder_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_gulden_indies_guilder_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   gulden_indies_guilder_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_gulden_indies_guilder')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3156,9 +3155,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #gulden_south_german_gulden
   gulden_south_german_gulden_03_name_currency:0 "[Localize('gulden_south_german_gulden_good')] [Localize('gulden_south_german_gulden_c')]"
 
-  gulden_south_german_gulden_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_gulden_south_german_gulden')|+D]"
-  gulden_south_german_gulden_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_gulden_south_german_gulden')|+D]"
-  gulden_south_german_gulden_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('gulden_south_german_gulden_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  gulden_south_german_gulden_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_gulden_south_german_gulden')|+D]"
+  gulden_south_german_gulden_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_gulden_south_german_gulden')|+D]"
+  gulden_south_german_gulden_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('gulden_south_german_gulden_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   gulden_south_german_gulden_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_gulden_south_german_gulden_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   gulden_south_german_gulden_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_gulden_south_german_gulden')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3174,9 +3173,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #krone_czech_koruna
   krone_czech_koruna_03_name_currency:0 "[Localize('krone_czech_koruna_good')] [Localize('krone_czech_koruna_c')]"
 
-  krone_czech_koruna_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_krone_czech_koruna')|+D]"
-  krone_czech_koruna_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_krone_czech_koruna')|+D]"
-  krone_czech_koruna_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('krone_czech_koruna_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  krone_czech_koruna_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_krone_czech_koruna')|+D]"
+  krone_czech_koruna_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_krone_czech_koruna')|+D]"
+  krone_czech_koruna_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('krone_czech_koruna_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   krone_czech_koruna_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_krone_czech_koruna_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   krone_czech_koruna_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_krone_czech_koruna')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3192,9 +3191,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #krone_danish_krone
   krone_danish_krone_03_name_currency:0 "[Localize('krone_danish_krone_good')] [Localize('krone_danish_krone_c')]"
 
-  krone_danish_krone_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_krone_danish_krone')|+D]"
-  krone_danish_krone_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_krone_danish_krone')|+D]"
-  krone_danish_krone_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('krone_danish_krone_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  krone_danish_krone_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_krone_danish_krone')|+D]"
+  krone_danish_krone_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_krone_danish_krone')|+D]"
+  krone_danish_krone_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('krone_danish_krone_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   krone_danish_krone_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_krone_danish_krone_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   krone_danish_krone_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_krone_danish_krone')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3210,9 +3209,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #krone_estonian_kroon
   krone_estonian_kroon_03_name_currency:0 "[Localize('krone_estonian_kroon_good')] [Localize('krone_estonian_kroon_c')]"
 
-  krone_estonian_kroon_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_krone_estonian_kroon')|+D]"
-  krone_estonian_kroon_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_krone_estonian_kroon')|+D]"
-  krone_estonian_kroon_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('krone_estonian_kroon_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  krone_estonian_kroon_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_krone_estonian_kroon')|+D]"
+  krone_estonian_kroon_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_krone_estonian_kroon')|+D]"
+  krone_estonian_kroon_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('krone_estonian_kroon_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   krone_estonian_kroon_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_krone_estonian_kroon_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   krone_estonian_kroon_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_krone_estonian_kroon')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3228,9 +3227,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #krone_icelandic_krona
   krone_icelandic_krona_03_name_currency:0 "[Localize('krone_icelandic_krona_good')] [Localize('krone_icelandic_krona_c')]"
 
-  krone_icelandic_krona_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_krone_icelandic_krona')|+D]"
-  krone_icelandic_krona_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_krone_icelandic_krona')|+D]"
-  krone_icelandic_krona_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('krone_icelandic_krona_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  krone_icelandic_krona_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_krone_icelandic_krona')|+D]"
+  krone_icelandic_krona_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_krone_icelandic_krona')|+D]"
+  krone_icelandic_krona_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('krone_icelandic_krona_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   krone_icelandic_krona_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_krone_icelandic_krona_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   krone_icelandic_krona_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_krone_icelandic_krona')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3246,9 +3245,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #krone_norwegian_krone
   krone_norwegian_krone_03_name_currency:0 "[Localize('krone_norwegian_krone_good')] [Localize('krone_norwegian_krone_c')]"
 
-  krone_norwegian_krone_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_krone_norwegian_krone')|+D]"
-  krone_norwegian_krone_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_krone_norwegian_krone')|+D]"
-  krone_norwegian_krone_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('krone_norwegian_krone_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  krone_norwegian_krone_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_krone_norwegian_krone')|+D]"
+  krone_norwegian_krone_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_krone_norwegian_krone')|+D]"
+  krone_norwegian_krone_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('krone_norwegian_krone_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   krone_norwegian_krone_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_krone_norwegian_krone_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   krone_norwegian_krone_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_krone_norwegian_krone')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3264,9 +3263,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #krone_slovak_koruna
   krone_slovak_koruna_03_name_currency:0 "[Localize('krone_slovak_koruna_good')] [Localize('krone_slovak_koruna_c')]"
 
-  krone_slovak_koruna_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_krone_slovak_koruna')|+D]"
-  krone_slovak_koruna_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_krone_slovak_koruna')|+D]"
-  krone_slovak_koruna_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('krone_slovak_koruna_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  krone_slovak_koruna_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_krone_slovak_koruna')|+D]"
+  krone_slovak_koruna_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_krone_slovak_koruna')|+D]"
+  krone_slovak_koruna_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('krone_slovak_koruna_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   krone_slovak_koruna_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_krone_slovak_koruna_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   krone_slovak_koruna_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_krone_slovak_koruna')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3282,9 +3281,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #krone_swedish_krona
   krone_swedish_krona_03_name_currency:0 "[Localize('krone_swedish_krona_good')] [Localize('krone_swedish_krona_c')]"
 
-  krone_swedish_krona_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_krone_swedish_krona')|+D]"
-  krone_swedish_krona_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_krone_swedish_krona')|+D]"
-  krone_swedish_krona_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('krone_swedish_krona_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  krone_swedish_krona_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_krone_swedish_krona')|+D]"
+  krone_swedish_krona_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_krone_swedish_krona')|+D]"
+  krone_swedish_krona_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('krone_swedish_krona_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   krone_swedish_krona_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_krone_swedish_krona_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   krone_swedish_krona_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_krone_swedish_krona')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3300,9 +3299,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #leon_leu
   leon_leu_03_name_currency:0 "[Localize('leon_leu_good')] [Localize('leon_leu_c')]"
 
-  leon_leu_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_leon_leu')|+D]"
-  leon_leu_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_leon_leu')|+D]"
-  leon_leu_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('leon_leu_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  leon_leu_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_leon_leu')|+D]"
+  leon_leu_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_leon_leu')|+D]"
+  leon_leu_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('leon_leu_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   leon_leu_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_leon_leu_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   leon_leu_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_leon_leu')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3318,9 +3317,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #leon_lev
   leon_lev_03_name_currency:0 "[Localize('leon_lev_good')] [Localize('leon_lev_c')]"
 
-  leon_lev_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_leon_lev')|+D]"
-  leon_lev_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_leon_lev')|+D]"
-  leon_lev_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('leon_lev_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  leon_lev_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_leon_lev')|+D]"
+  leon_lev_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_leon_lev')|+D]"
+  leon_lev_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('leon_lev_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   leon_lev_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_leon_lev_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   leon_lev_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_leon_lev')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3336,9 +3335,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #lira
   lira_03_name_currency:0 "[Localize('lira_good')] [Localize('lira_c')]"
 
-  lira_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_lira')|+D]"
-  lira_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_lira')|+D]"
-  lira_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('lira_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  lira_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_lira')|+D]"
+  lira_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_lira')|+D]"
+  lira_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('lira_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   lira_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_lira_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   lira_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_lira')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3354,9 +3353,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #lira_ducato
   lira_ducato_03_name_currency:0 "[Localize('lira_ducato_good')] [Localize('lira_ducato_c')]"
 
-  lira_ducato_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_lira_ducato')|+D]"
-  lira_ducato_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_lira_ducato')|+D]"
-  lira_ducato_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('lira_ducato_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  lira_ducato_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_lira_ducato')|+D]"
+  lira_ducato_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_lira_ducato')|+D]"
+  lira_ducato_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('lira_ducato_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   lira_ducato_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_lira_ducato_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   lira_ducato_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_lira_ducato')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3372,9 +3371,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #lira_ottoman_lira
   lira_ottoman_lira_03_name_currency:0 "[Localize('lira_ottoman_lira_good')] [Localize('lira_ottoman_lira_c')]"
 
-  lira_ottoman_lira_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_lira_ottoman_lira')|+D]"
-  lira_ottoman_lira_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_lira_ottoman_lira')|+D]"
-  lira_ottoman_lira_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('lira_ottoman_lira_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  lira_ottoman_lira_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_lira_ottoman_lira')|+D]"
+  lira_ottoman_lira_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_lira_ottoman_lira')|+D]"
+  lira_ottoman_lira_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('lira_ottoman_lira_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   lira_ottoman_lira_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_lira_ottoman_lira_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   lira_ottoman_lira_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_lira_ottoman_lira')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3390,9 +3389,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #lira_scudo_pontificio
   lira_scudo_pontificio_03_name_currency:0 "[Localize('lira_scudo_pontificio_good')] [Localize('lira_scudo_pontificio_c')]"
 
-  lira_scudo_pontificio_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_lira_scudo_pontificio')|+D]"
-  lira_scudo_pontificio_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_lira_scudo_pontificio')|+D]"
-  lira_scudo_pontificio_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('lira_scudo_pontificio_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  lira_scudo_pontificio_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_lira_scudo_pontificio')|+D]"
+  lira_scudo_pontificio_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_lira_scudo_pontificio')|+D]"
+  lira_scudo_pontificio_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('lira_scudo_pontificio_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   lira_scudo_pontificio_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_lira_scudo_pontificio_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   lira_scudo_pontificio_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_lira_scudo_pontificio')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3408,9 +3407,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #lira_scudo_sardo
   lira_scudo_sardo_03_name_currency:0 "[Localize('lira_scudo_sardo_good')] [Localize('lira_scudo_sardo_c')]"
 
-  lira_scudo_sardo_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_lira_scudo_sardo')|+D]"
-  lira_scudo_sardo_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_lira_scudo_sardo')|+D]"
-  lira_scudo_sardo_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('lira_scudo_sardo_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  lira_scudo_sardo_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_lira_scudo_sardo')|+D]"
+  lira_scudo_sardo_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_lira_scudo_sardo')|+D]"
+  lira_scudo_sardo_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('lira_scudo_sardo_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   lira_scudo_sardo_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_lira_scudo_sardo_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   lira_scudo_sardo_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_lira_scudo_sardo')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3426,9 +3425,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #lira_toscane_lira
   lira_toscane_lira_03_name_currency:0 "[Localize('lira_toscane_lira_good')] [Localize('lira_toscane_lira_c')]"
 
-  lira_toscane_lira_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_lira_toscane_lira')|+D]"
-  lira_toscane_lira_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_lira_toscane_lira')|+D]"
-  lira_toscane_lira_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('lira_toscane_lira_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  lira_toscane_lira_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_lira_toscane_lira')|+D]"
+  lira_toscane_lira_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_lira_toscane_lira')|+D]"
+  lira_toscane_lira_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('lira_toscane_lira_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   lira_toscane_lira_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_lira_toscane_lira_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   lira_toscane_lira_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_lira_toscane_lira')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3444,9 +3443,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #mark
   mark_03_name_currency:0 "[Localize('mark_good')] [Localize('mark_c')]"
 
-  mark_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_mark')|+D]"
-  mark_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_mark')|+D]"
-  mark_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('mark_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  mark_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_mark')|+D]"
+  mark_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_mark')|+D]"
+  mark_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('mark_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   mark_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_mark_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   mark_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_mark')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3462,9 +3461,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #mark_finnish_markka
   mark_finnish_markka_03_name_currency:0 "[Localize('mark_finnish_markka_good')] [Localize('mark_finnish_markka_c')]"
 
-  mark_finnish_markka_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_mark_finnish_markka')|+D]"
-  mark_finnish_markka_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_mark_finnish_markka')|+D]"
-  mark_finnish_markka_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('mark_finnish_markka_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  mark_finnish_markka_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_mark_finnish_markka')|+D]"
+  mark_finnish_markka_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_mark_finnish_markka')|+D]"
+  mark_finnish_markka_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('mark_finnish_markka_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   mark_finnish_markka_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_mark_finnish_markka_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   mark_finnish_markka_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_mark_finnish_markka')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3480,9 +3479,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #peso
   peso_03_name_currency:0 "[Localize('peso_good')] [Localize('peso_c')]"
 
-  peso_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_peso')|+D]"
-  peso_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_peso')|+D]"
-  peso_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  peso_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_peso')|+D]"
+  peso_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_peso')|+D]"
+  peso_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   peso_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_peso_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   peso_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_peso')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3498,9 +3497,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #peso_argentine_peso
   peso_argentine_peso_03_name_currency:0 "[Localize('peso_argentine_peso_good')] [Localize('peso_argentine_peso_c')]"
 
-  peso_argentine_peso_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_peso_argentine_peso')|+D]"
-  peso_argentine_peso_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_peso_argentine_peso')|+D]"
-  peso_argentine_peso_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('peso_argentine_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  peso_argentine_peso_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_peso_argentine_peso')|+D]"
+  peso_argentine_peso_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_peso_argentine_peso')|+D]"
+  peso_argentine_peso_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('peso_argentine_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   peso_argentine_peso_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_peso_argentine_peso_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   peso_argentine_peso_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_peso_argentine_peso')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3516,9 +3515,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #peso_bolivien_peso
   peso_bolivien_peso_03_name_currency:0 "[Localize('peso_bolivien_peso_good')] [Localize('peso_bolivien_peso_c')]"
 
-  peso_bolivien_peso_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_peso_bolivien_peso')|+D]"
-  peso_bolivien_peso_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_peso_bolivien_peso')|+D]"
-  peso_bolivien_peso_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('peso_bolivien_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  peso_bolivien_peso_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_peso_bolivien_peso')|+D]"
+  peso_bolivien_peso_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_peso_bolivien_peso')|+D]"
+  peso_bolivien_peso_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('peso_bolivien_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   peso_bolivien_peso_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_peso_bolivien_peso_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   peso_bolivien_peso_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_peso_bolivien_peso')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3534,9 +3533,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #peso_chilean_peso
   peso_chilean_peso_03_name_currency:0 "[Localize('peso_chilean_peso_good')] [Localize('peso_chilean_peso_c')]"
 
-  peso_chilean_peso_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_peso_chilean_peso')|+D]"
-  peso_chilean_peso_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_peso_chilean_peso')|+D]"
-  peso_chilean_peso_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('peso_chilean_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  peso_chilean_peso_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_peso_chilean_peso')|+D]"
+  peso_chilean_peso_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_peso_chilean_peso')|+D]"
+  peso_chilean_peso_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('peso_chilean_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   peso_chilean_peso_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_peso_chilean_peso_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   peso_chilean_peso_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_peso_chilean_peso')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3552,9 +3551,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #peso_colombian_peso
   peso_colombian_peso_03_name_currency:0 "[Localize('peso_colombian_peso_good')] [Localize('peso_colombian_peso_c')]"
 
-  peso_colombian_peso_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_peso_colombian_peso')|+D]"
-  peso_colombian_peso_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_peso_colombian_peso')|+D]"
-  peso_colombian_peso_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('peso_colombian_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  peso_colombian_peso_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_peso_colombian_peso')|+D]"
+  peso_colombian_peso_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_peso_colombian_peso')|+D]"
+  peso_colombian_peso_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('peso_colombian_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   peso_colombian_peso_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_peso_colombian_peso_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   peso_colombian_peso_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_peso_colombian_peso')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3570,9 +3569,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #peso_costa_rican_colon
   peso_costa_rican_colon_03_name_currency:0 "[Localize('peso_costa_rican_colon_good')] [Localize('peso_costa_rican_colon_c')]"
 
-  peso_costa_rican_colon_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_peso_costa_rican_colon')|+D]"
-  peso_costa_rican_colon_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_peso_costa_rican_colon')|+D]"
-  peso_costa_rican_colon_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('peso_costa_rican_colon_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  peso_costa_rican_colon_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_peso_costa_rican_colon')|+D]"
+  peso_costa_rican_colon_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_peso_costa_rican_colon')|+D]"
+  peso_costa_rican_colon_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('peso_costa_rican_colon_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   peso_costa_rican_colon_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_peso_costa_rican_colon_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   peso_costa_rican_colon_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_peso_costa_rican_colon')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3588,9 +3587,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #peso_cuban_peso
   peso_cuban_peso_03_name_currency:0 "[Localize('peso_cuban_peso_good')] [Localize('peso_cuban_peso_c')]"
 
-  peso_cuban_peso_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_peso_cuban_peso')|+D]"
-  peso_cuban_peso_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_peso_cuban_peso')|+D]"
-  peso_cuban_peso_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('peso_cuban_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  peso_cuban_peso_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_peso_cuban_peso')|+D]"
+  peso_cuban_peso_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_peso_cuban_peso')|+D]"
+  peso_cuban_peso_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('peso_cuban_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   peso_cuban_peso_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_peso_cuban_peso_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   peso_cuban_peso_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_peso_cuban_peso')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3606,9 +3605,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #peso_ecuadorian_peso
   peso_ecuadorian_peso_03_name_currency:0 "[Localize('peso_ecuadorian_peso_good')] [Localize('peso_ecuadorian_peso_c')]"
 
-  peso_ecuadorian_peso_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_peso_ecuadorian_peso')|+D]"
-  peso_ecuadorian_peso_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_peso_ecuadorian_peso')|+D]"
-  peso_ecuadorian_peso_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('peso_ecuadorian_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  peso_ecuadorian_peso_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_peso_ecuadorian_peso')|+D]"
+  peso_ecuadorian_peso_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_peso_ecuadorian_peso')|+D]"
+  peso_ecuadorian_peso_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('peso_ecuadorian_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   peso_ecuadorian_peso_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_peso_ecuadorian_peso_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   peso_ecuadorian_peso_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_peso_ecuadorian_peso')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3624,9 +3623,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #peso_el_salvador_colon
   peso_el_salvador_colon_03_name_currency:0 "[Localize('peso_el_salvador_colon_good')] [Localize('peso_el_salvador_colon_c')]"
 
-  peso_el_salvador_colon_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_peso_el_salvador_colon')|+D]"
-  peso_el_salvador_colon_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_peso_el_salvador_colon')|+D]"
-  peso_el_salvador_colon_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('peso_el_salvador_colon_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  peso_el_salvador_colon_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_peso_el_salvador_colon')|+D]"
+  peso_el_salvador_colon_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_peso_el_salvador_colon')|+D]"
+  peso_el_salvador_colon_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('peso_el_salvador_colon_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   peso_el_salvador_colon_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_peso_el_salvador_colon_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   peso_el_salvador_colon_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_peso_el_salvador_colon')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3642,9 +3641,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #peso_guatemalan_quetzal
   peso_guatemalan_quetzal_03_name_currency:0 "[Localize('peso_guatemalan_quetzal_good')] [Localize('peso_guatemalan_quetzal_c')]"
 
-  peso_guatemalan_quetzal_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_peso_guatemalan_quetzal')|+D]"
-  peso_guatemalan_quetzal_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_peso_guatemalan_quetzal')|+D]"
-  peso_guatemalan_quetzal_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('peso_guatemalan_quetzal_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  peso_guatemalan_quetzal_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_peso_guatemalan_quetzal')|+D]"
+  peso_guatemalan_quetzal_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_peso_guatemalan_quetzal')|+D]"
+  peso_guatemalan_quetzal_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('peso_guatemalan_quetzal_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   peso_guatemalan_quetzal_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_peso_guatemalan_quetzal_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   peso_guatemalan_quetzal_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_peso_guatemalan_quetzal')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3660,9 +3659,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #peso_honduran_lempira
   peso_honduran_lempira_03_name_currency:0 "[Localize('peso_honduran_lempira_good')] [Localize('peso_honduran_lempira_c')]"
 
-  peso_honduran_lempira_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_peso_honduran_lempira')|+D]"
-  peso_honduran_lempira_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_peso_honduran_lempira')|+D]"
-  peso_honduran_lempira_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('peso_honduran_lempira_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  peso_honduran_lempira_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_peso_honduran_lempira')|+D]"
+  peso_honduran_lempira_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_peso_honduran_lempira')|+D]"
+  peso_honduran_lempira_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('peso_honduran_lempira_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   peso_honduran_lempira_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_peso_honduran_lempira_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   peso_honduran_lempira_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_peso_honduran_lempira')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3678,9 +3677,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #peso_mexican_peso
   peso_mexican_peso_03_name_currency:0 "[Localize('peso_mexican_peso_good')] [Localize('peso_mexican_peso_c')]"
 
-  peso_mexican_peso_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_peso_mexican_peso')|+D]"
-  peso_mexican_peso_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_peso_mexican_peso')|+D]"
-  peso_mexican_peso_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('peso_mexican_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  peso_mexican_peso_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_peso_mexican_peso')|+D]"
+  peso_mexican_peso_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_peso_mexican_peso')|+D]"
+  peso_mexican_peso_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('peso_mexican_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   peso_mexican_peso_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_peso_mexican_peso_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   peso_mexican_peso_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_peso_mexican_peso')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3696,9 +3695,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #peso_nicaraguan_cordoba
   peso_nicaraguan_cordoba_03_name_currency:0 "[Localize('peso_nicaraguan_cordoba_good')] [Localize('peso_nicaraguan_cordoba_c')]"
 
-  peso_nicaraguan_cordoba_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_peso_nicaraguan_cordoba')|+D]"
-  peso_nicaraguan_cordoba_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_peso_nicaraguan_cordoba')|+D]"
-  peso_nicaraguan_cordoba_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('peso_nicaraguan_cordoba_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  peso_nicaraguan_cordoba_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_peso_nicaraguan_cordoba')|+D]"
+  peso_nicaraguan_cordoba_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_peso_nicaraguan_cordoba')|+D]"
+  peso_nicaraguan_cordoba_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('peso_nicaraguan_cordoba_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   peso_nicaraguan_cordoba_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_peso_nicaraguan_cordoba_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   peso_nicaraguan_cordoba_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_peso_nicaraguan_cordoba')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3714,9 +3713,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #peso_paraguayan_peso
   peso_paraguayan_peso_03_name_currency:0 "[Localize('peso_paraguayan_peso_good')] [Localize('peso_paraguayan_peso_c')]"
 
-  peso_paraguayan_peso_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_peso_paraguayan_peso')|+D]"
-  peso_paraguayan_peso_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_peso_paraguayan_peso')|+D]"
-  peso_paraguayan_peso_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('peso_paraguayan_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  peso_paraguayan_peso_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_peso_paraguayan_peso')|+D]"
+  peso_paraguayan_peso_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_peso_paraguayan_peso')|+D]"
+  peso_paraguayan_peso_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('peso_paraguayan_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   peso_paraguayan_peso_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_peso_paraguayan_peso_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   peso_paraguayan_peso_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_peso_paraguayan_peso')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3732,9 +3731,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #peso_philippine_peso
   peso_philippine_peso_03_name_currency:0 "[Localize('peso_philippine_peso_good')] [Localize('peso_philippine_peso_c')]"
 
-  peso_philippine_peso_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_peso_philippine_peso')|+D]"
-  peso_philippine_peso_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_peso_philippine_peso')|+D]"
-  peso_philippine_peso_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('peso_philippine_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  peso_philippine_peso_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_peso_philippine_peso')|+D]"
+  peso_philippine_peso_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_peso_philippine_peso')|+D]"
+  peso_philippine_peso_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('peso_philippine_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   peso_philippine_peso_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_peso_philippine_peso_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   peso_philippine_peso_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_peso_philippine_peso')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3750,9 +3749,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #peso_sol_de_oro
   peso_sol_de_oro_03_name_currency:0 "[Localize('peso_sol_de_oro_good')] [Localize('peso_sol_de_oro_c')]"
 
-  peso_sol_de_oro_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_peso_sol_de_oro')|+D]"
-  peso_sol_de_oro_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_peso_sol_de_oro')|+D]"
-  peso_sol_de_oro_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('peso_sol_de_oro_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  peso_sol_de_oro_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_peso_sol_de_oro')|+D]"
+  peso_sol_de_oro_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_peso_sol_de_oro')|+D]"
+  peso_sol_de_oro_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('peso_sol_de_oro_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   peso_sol_de_oro_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_peso_sol_de_oro_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   peso_sol_de_oro_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_peso_sol_de_oro')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3768,9 +3767,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #peso_uruguayan_peso
   peso_uruguayan_peso_03_name_currency:0 "[Localize('peso_uruguayan_peso_good')] [Localize('peso_uruguayan_peso_c')]"
 
-  peso_uruguayan_peso_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_peso_uruguayan_peso')|+D]"
-  peso_uruguayan_peso_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_peso_uruguayan_peso')|+D]"
-  peso_uruguayan_peso_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('peso_uruguayan_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  peso_uruguayan_peso_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_peso_uruguayan_peso')|+D]"
+  peso_uruguayan_peso_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_peso_uruguayan_peso')|+D]"
+  peso_uruguayan_peso_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('peso_uruguayan_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   peso_uruguayan_peso_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_peso_uruguayan_peso_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   peso_uruguayan_peso_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_peso_uruguayan_peso')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3786,9 +3785,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #peso_venezuelan_peso
   peso_venezuelan_peso_03_name_currency:0 "[Localize('peso_venezuelan_peso_good')] [Localize('peso_venezuelan_peso_c')]"
 
-  peso_venezuelan_peso_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_peso_venezuelan_peso')|+D]"
-  peso_venezuelan_peso_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_peso_venezuelan_peso')|+D]"
-  peso_venezuelan_peso_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('peso_venezuelan_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  peso_venezuelan_peso_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_peso_venezuelan_peso')|+D]"
+  peso_venezuelan_peso_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_peso_venezuelan_peso')|+D]"
+  peso_venezuelan_peso_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('peso_venezuelan_peso_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   peso_venezuelan_peso_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_peso_venezuelan_peso_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   peso_venezuelan_peso_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_peso_venezuelan_peso')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3804,9 +3803,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #pound_egyptian_pound
   pound_egyptian_pound_03_name_currency:0 "[Localize('pound_egyptian_pound_good')] [Localize('pound_egyptian_pound_c')]"
 
-  pound_egyptian_pound_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_pound_egyptian_pound')|+D]"
-  pound_egyptian_pound_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_pound_egyptian_pound')|+D]"
-  pound_egyptian_pound_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('pound_egyptian_pound_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  pound_egyptian_pound_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_pound_egyptian_pound')|+D]"
+  pound_egyptian_pound_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_pound_egyptian_pound')|+D]"
+  pound_egyptian_pound_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('pound_egyptian_pound_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   pound_egyptian_pound_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_pound_egyptian_pound_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   pound_egyptian_pound_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_pound_egyptian_pound')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3822,9 +3821,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #pound_irish_pound
   pound_irish_pound_03_name_currency:0 "[Localize('pound_irish_pound_good')] [Localize('pound_irish_pound_c')]"
 
-  pound_irish_pound_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_pound_irish_pound')|+D]"
-  pound_irish_pound_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_pound_irish_pound')|+D]"
-  pound_irish_pound_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('pound_irish_pound_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  pound_irish_pound_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_pound_irish_pound')|+D]"
+  pound_irish_pound_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_pound_irish_pound')|+D]"
+  pound_irish_pound_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('pound_irish_pound_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   pound_irish_pound_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_pound_irish_pound_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   pound_irish_pound_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_pound_irish_pound')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3840,9 +3839,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #pound_sterling
   pound_sterling_03_name_currency:0 "[Localize('pound_sterling_good')] [Localize('pound_sterling_c')]"
 
-  pound_sterling_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_pound_sterling')|+D]"
-  pound_sterling_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_pound_sterling')|+D]"
-  pound_sterling_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('pound_sterling_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  pound_sterling_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_pound_sterling')|+D]"
+  pound_sterling_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_pound_sterling')|+D]"
+  pound_sterling_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('pound_sterling_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   pound_sterling_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_pound_sterling_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   pound_sterling_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_pound_sterling')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3858,9 +3857,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #real
   real_03_name_currency:0 "[Localize('real_good')] [Localize('real_c')]"
 
-  real_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_real')|+D]"
-  real_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_real')|+D]"
-  real_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('real_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  real_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_real')|+D]"
+  real_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_real')|+D]"
+  real_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('real_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   real_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_real_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   real_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_real')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3876,9 +3875,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #real_brazilian_real
   real_brazilian_real_03_name_currency:0 "[Localize('real_brazilian_real_good')] [Localize('real_brazilian_real_c')]"
 
-  real_brazilian_real_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_real_brazilian_real')|+D]"
-  real_brazilian_real_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_real_brazilian_real')|+D]"
-  real_brazilian_real_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('real_brazilian_real_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  real_brazilian_real_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_real_brazilian_real')|+D]"
+  real_brazilian_real_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_real_brazilian_real')|+D]"
+  real_brazilian_real_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('real_brazilian_real_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   real_brazilian_real_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_real_brazilian_real_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   real_brazilian_real_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_real_brazilian_real')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3894,9 +3893,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #rupee_indian_rupee
   rupee_indian_rupee_03_name_currency:0 "[Localize('rupee_indian_rupee_good')] [Localize('rupee_indian_rupee_c')]"
 
-  rupee_indian_rupee_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_rupee_indian_rupee')|+D]"
-  rupee_indian_rupee_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_rupee_indian_rupee')|+D]"
-  rupee_indian_rupee_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('rupee_indian_rupee_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  rupee_indian_rupee_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_rupee_indian_rupee')|+D]"
+  rupee_indian_rupee_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_rupee_indian_rupee')|+D]"
+  rupee_indian_rupee_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('rupee_indian_rupee_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   rupee_indian_rupee_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_rupee_indian_rupee_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   rupee_indian_rupee_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_rupee_indian_rupee')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3912,9 +3911,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #rupee_indonesian_rupiah
   rupee_indonesian_rupiah_03_name_currency:0 "[Localize('rupee_indonesian_rupiah_good')] [Localize('rupee_indonesian_rupiah_c')]"
 
-  rupee_indonesian_rupiah_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_rupee_indonesian_rupiah')|+D]"
-  rupee_indonesian_rupiah_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_rupee_indonesian_rupiah')|+D]"
-  rupee_indonesian_rupiah_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('rupee_indonesian_rupiah_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  rupee_indonesian_rupiah_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_rupee_indonesian_rupiah')|+D]"
+  rupee_indonesian_rupiah_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_rupee_indonesian_rupiah')|+D]"
+  rupee_indonesian_rupiah_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('rupee_indonesian_rupiah_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   rupee_indonesian_rupiah_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_rupee_indonesian_rupiah_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   rupee_indonesian_rupiah_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_rupee_indonesian_rupiah')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3930,9 +3929,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #spe_baht
   spe_baht_03_name_currency:0 "[Localize('spe_baht_good')] [Localize('spe_baht_c')]"
 
-  spe_baht_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_spe_baht')|+D]"
-  spe_baht_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_spe_baht')|+D]"
-  spe_baht_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('spe_baht_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  spe_baht_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_spe_baht')|+D]"
+  spe_baht_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_spe_baht')|+D]"
+  spe_baht_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('spe_baht_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   spe_baht_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_spe_baht_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   spe_baht_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_spe_baht')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3948,9 +3947,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #spe_dong
   spe_dong_03_name_currency:0 "[Localize('spe_dong_good')] [Localize('spe_dong_c')]"
 
-  spe_dong_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_spe_dong')|+D]"
-  spe_dong_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_spe_dong')|+D]"
-  spe_dong_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('spe_dong_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  spe_dong_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_spe_dong')|+D]"
+  spe_dong_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_spe_dong')|+D]"
+  spe_dong_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('spe_dong_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   spe_dong_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_spe_dong_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   spe_dong_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_spe_dong')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3966,9 +3965,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #spe_drachma
   spe_drachma_03_name_currency:0 "[Localize('spe_drachma_good')] [Localize('spe_drachma_c')]"
 
-  spe_drachma_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_spe_drachma')|+D]"
-  spe_drachma_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_spe_drachma')|+D]"
-  spe_drachma_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('spe_drachma_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  spe_drachma_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_spe_drachma')|+D]"
+  spe_drachma_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_spe_drachma')|+D]"
+  spe_drachma_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('spe_drachma_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   spe_drachma_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_spe_drachma_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   spe_drachma_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_spe_drachma')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -3984,9 +3983,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #spe_korean_won
   spe_korean_won_03_name_currency:0 "[Localize('spe_korean_won_good')] [Localize('spe_korean_won_c')]"
 
-  spe_korean_won_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_spe_korean_won')|+D]"
-  spe_korean_won_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_spe_korean_won')|+D]"
-  spe_korean_won_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('spe_korean_won_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  spe_korean_won_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_spe_korean_won')|+D]"
+  spe_korean_won_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_spe_korean_won')|+D]"
+  spe_korean_won_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('spe_korean_won_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   spe_korean_won_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_spe_korean_won_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   spe_korean_won_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_spe_korean_won')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -4002,9 +4001,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #spe_latvian_lats
   spe_latvian_lats_03_name_currency:0 "[Localize('spe_latvian_lats_good')] [Localize('spe_latvian_lats_c')]"
 
-  spe_latvian_lats_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_spe_latvian_lats')|+D]"
-  spe_latvian_lats_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_spe_latvian_lats')|+D]"
-  spe_latvian_lats_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('spe_latvian_lats_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  spe_latvian_lats_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_spe_latvian_lats')|+D]"
+  spe_latvian_lats_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_spe_latvian_lats')|+D]"
+  spe_latvian_lats_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('spe_latvian_lats_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   spe_latvian_lats_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_spe_latvian_lats_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   spe_latvian_lats_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_spe_latvian_lats')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -4020,9 +4019,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #spe_lithuanian_litas
   spe_lithuanian_litas_03_name_currency:0 "[Localize('spe_lithuanian_litas_good')] [Localize('spe_lithuanian_litas_c')]"
 
-  spe_lithuanian_litas_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_spe_lithuanian_litas')|+D]"
-  spe_lithuanian_litas_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_spe_lithuanian_litas')|+D]"
-  spe_lithuanian_litas_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('spe_lithuanian_litas_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  spe_lithuanian_litas_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_spe_lithuanian_litas')|+D]"
+  spe_lithuanian_litas_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_spe_lithuanian_litas')|+D]"
+  spe_lithuanian_litas_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('spe_lithuanian_litas_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   spe_lithuanian_litas_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_spe_lithuanian_litas_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   spe_lithuanian_litas_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_spe_lithuanian_litas')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -4038,9 +4037,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #spe_peseta
   spe_peseta_03_name_currency:0 "[Localize('spe_peseta_good')] [Localize('spe_peseta_c')]"
 
-  spe_peseta_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_spe_peseta')|+D]"
-  spe_peseta_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_spe_peseta')|+D]"
-  spe_peseta_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('spe_peseta_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  spe_peseta_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_spe_peseta')|+D]"
+  spe_peseta_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_spe_peseta')|+D]"
+  spe_peseta_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('spe_peseta_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   spe_peseta_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_spe_peseta_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   spe_peseta_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_spe_peseta')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -4056,9 +4055,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #spe_ruble
   spe_ruble_03_name_currency:0 "[Localize('spe_ruble_good')] [Localize('spe_ruble_c')]"
 
-  spe_ruble_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_spe_ruble')|+D]"
-  spe_ruble_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_spe_ruble')|+D]"
-  spe_ruble_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('spe_ruble_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  spe_ruble_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_spe_ruble')|+D]"
+  spe_ruble_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_spe_ruble')|+D]"
+  spe_ruble_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('spe_ruble_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   spe_ruble_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_spe_ruble_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   spe_ruble_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_spe_ruble')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -4074,9 +4073,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #spe_uni
   spe_uni_03_name_currency:0 "[Localize('spe_uni_good')] [Localize('spe_uni_c')]"
 
-  spe_uni_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_spe_uni')|+D]"
-  spe_uni_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_spe_uni')|+D]"
-  spe_uni_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('spe_uni_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  spe_uni_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_spe_uni')|+D]"
+  spe_uni_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_spe_uni')|+D]"
+  spe_uni_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('spe_uni_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   spe_uni_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_spe_uni_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   spe_uni_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_spe_uni')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -4092,9 +4091,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #spe_yen
   spe_yen_03_name_currency:0 "[Localize('spe_yen_good')] [Localize('spe_yen_c')]"
 
-  spe_yen_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_spe_yen')|+D]"
-  spe_yen_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_spe_yen')|+D]"
-  spe_yen_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('spe_yen_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  spe_yen_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_spe_yen')|+D]"
+  spe_yen_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_spe_yen')|+D]"
+  spe_yen_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('spe_yen_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   spe_yen_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_spe_yen_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   spe_yen_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_spe_yen')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -4110,9 +4109,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #spe_yuan
   spe_yuan_03_name_currency:0 "[Localize('spe_yuan_good')] [Localize('spe_yuan_c')]"
 
-  spe_yuan_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_spe_yuan')|+D]"
-  spe_yuan_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_spe_yuan')|+D]"
-  spe_yuan_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('spe_yuan_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  spe_yuan_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_spe_yuan')|+D]"
+  spe_yuan_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_spe_yuan')|+D]"
+  spe_yuan_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('spe_yuan_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   spe_yuan_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_spe_yuan_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   spe_yuan_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_spe_yuan')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -4128,9 +4127,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #spe_zloti
   spe_zloti_03_name_currency:0 "[Localize('spe_zloti_good')] [Localize('spe_zloti_c')]"
 
-  spe_zloti_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_spe_zloti')|+D]"
-  spe_zloti_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_spe_zloti')|+D]"
-  spe_zloti_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('spe_zloti_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  spe_zloti_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_spe_zloti')|+D]"
+  spe_zloti_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_spe_zloti')|+D]"
+  spe_zloti_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('spe_zloti_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   spe_zloti_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_spe_zloti_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   spe_zloti_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_spe_zloti')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -4146,9 +4145,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #thaler_hannoveraner_thaler
   thaler_hannoveraner_thaler_03_name_currency:0 "[Localize('thaler_hannoveraner_thaler_good')] [Localize('thaler_hannoveraner_thaler_c')]"
 
-  thaler_hannoveraner_thaler_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_thaler_hannoveraner_thaler')|+D]"
-  thaler_hannoveraner_thaler_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_thaler_hannoveraner_thaler')|+D]"
-  thaler_hannoveraner_thaler_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('thaler_hannoveraner_thaler_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  thaler_hannoveraner_thaler_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_thaler_hannoveraner_thaler')|+D]"
+  thaler_hannoveraner_thaler_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_thaler_hannoveraner_thaler')|+D]"
+  thaler_hannoveraner_thaler_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('thaler_hannoveraner_thaler_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   thaler_hannoveraner_thaler_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_thaler_hannoveraner_thaler_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   thaler_hannoveraner_thaler_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_thaler_hannoveraner_thaler')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -4164,9 +4163,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #thaler_prussian_thaler
   thaler_prussian_thaler_03_name_currency:0 "[Localize('thaler_prussian_thaler_good')] [Localize('thaler_prussian_thaler_c')]"
 
-  thaler_prussian_thaler_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_thaler_prussian_thaler')|+D]"
-  thaler_prussian_thaler_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_thaler_prussian_thaler')|+D]"
-  thaler_prussian_thaler_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('thaler_prussian_thaler_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  thaler_prussian_thaler_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_thaler_prussian_thaler')|+D]"
+  thaler_prussian_thaler_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_thaler_prussian_thaler')|+D]"
+  thaler_prussian_thaler_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('thaler_prussian_thaler_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   thaler_prussian_thaler_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_thaler_prussian_thaler_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   thaler_prussian_thaler_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_thaler_prussian_thaler')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -4182,9 +4181,9 @@ quantity_of_currency_market_panel_thaler_saxon_thaler:0 "Quantity of [Localize('
   #thaler_saxon_thaler
   thaler_saxon_thaler_03_name_currency:0 "[Localize('thaler_saxon_thaler_good')] [Localize('thaler_saxon_thaler_c')]"
 
-  thaler_saxon_thaler_03_export_to:0 "Export: [GetPlayer.MakeScope.ScriptValue('export_to_thaler_saxon_thaler')|+D]"
-  thaler_saxon_thaler_03_import_from:0 "Import: [GetPlayer.MakeScope.ScriptValue('import_from_thaler_saxon_thaler')|+D]"
-  thaler_saxon_thaler_03_delta_with_player_country:0 "Delta: [GetPlayer.MakeScope.ScriptValue('thaler_saxon_thaler_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
+  thaler_saxon_thaler_03_export_to:0 "Экпорт: [GetPlayer.MakeScope.ScriptValue('export_to_thaler_saxon_thaler')|+D]"
+  thaler_saxon_thaler_03_import_from:0 "Импорт: [GetPlayer.MakeScope.ScriptValue('import_from_thaler_saxon_thaler')|+D]"
+  thaler_saxon_thaler_03_delta_with_player_country:0 "Дельта: [GetPlayer.MakeScope.ScriptValue('thaler_saxon_thaler_state_in_gold_delta')|+D] [GetPlayer.GetCustom('monetary_system')]"
 
   thaler_saxon_thaler_03_debt_in_national:0 "#v [GetPlayer.MakeScope.ScriptValue('debt_in_national_currency_thaler_saxon_thaler_sc')|D]#! [GetPlayer.GetCustom('currency_symbol')]"
   thaler_saxon_thaler_03_import_in:0 "([GetPlayer.MakeScope.ScriptValue('import_in_thaler_saxon_thaler')|=-D] [GetPlayer.GetCustom('currency_symbol')])"
@@ -5638,7 +5637,7 @@ pmg_base_building_private_construction_sector:0 "Private Construction Sector"
   ################################
   lawgroup_monetary_policy: "Monetary Policy"
 
-  law_no_monetary_policy: "No Monetary Policy"
+  law_no_monetary_policy: "отсутствует"
   law_revaluation_25: "Revaluation 25%"
   law_revaluation_50: "Revaluation 50%"
   law_revaluation_75: "Revaluation 75%"
@@ -6218,45 +6217,45 @@ pmg_base_building_private_construction_sector:0 "Private Construction Sector"
   #BUILDING
   ################################
 
-  concept_central_bank:0 "Central Bank"
-  concept_central_bank_desc:0 "In the 19th century, a [concept_central_bank] was generally defined as a economic institution with the primary role of issuing the national currency, regulating the [concept_money_supply], overseeing the financial system, and maintaining economic stability. [concept_central_bank] of the 19th century were often established in response to the need for a central issuer of currency capable of controlling the [concept_money_supply] and stabilizing the economic system."
+  concept_central_bank:0 "ЦентроБанк"
+  concept_central_bank_desc:0 "В XIX веке, основной задачей центрального банка была эмиссия национальной валюты, регулирование [Concept('concept_money_supply', 'денежной массы')], надзор за финансовой системой и поддержание экономической стабильности. Центробанк XIX века часто создавался в ответ на потребность в центральном эмитенте валюты, способном контролировать денежную массу и стабилизировать экономическую систему."
 
   concept_financial_centre:0 "Financial Centre"
   concept_financial_centre_desc:0 "In the 19th century, a [concept_financial_centre] was an economically significant region, where banking, financial and commercial activities were concentrated. These [concept_financial_centre] were often hubs for banking institutions, financial markets, corporations, and other business players."
 
-  concept_national_stockpile:0 "National Stockpile"
-  concept_national_stockpile_desc:0 "A "stockpile" is a substantial reserve or accumulation of something, typically goods, commodities, or resources, stored in anticipation of future needs or to address emergency situations. It can also refer to a large quantity of something that is amassed over a period of time."
+  concept_national_stockpile:0 "Национальный запас"
+  concept_national_stockpile_desc:0 "Значительные резервы или накопление чего-либо, обычно товаров, сырья или ресурсов, хранящихся в ожидании будущих потребностей или для решения чрезвычайных ситуаций. Оно также может означать большое количество чего-либо, накопленное за определенный период времени."
 
   ################################
   #divers
   ################################
 
-  concept_money_value:0 "Money Value"
-  concept_money_value_desc:0 " The [concept_money_value], is determined by the [concept_national_stockpile] divided by the total amount of currency produced and in circulation in your market ([concept_money_supply]). If national currency exit of your market, the value of the currency will increase; if national currency enter your market, the value of the currency will decrease. In the same way, if you increase the production of currency, it will decrease the monetary value, while decreasing the production will increase the monetary value."
+  concept_money_value:0 "Ценность"
+  concept_money_value_desc:0 "Денежная ценность определяется следующим образом: [concept_national_stockpile] деленный на [Concept('concept_money_supply', 'денежную массу')]. Если национальная валюта уходит с вашего рынка, то стоимость валюты увеличивается; если национальная валюта приходит на ваш рынок, то стоимость валюты уменьшается. Точно так же, если вы увеличите производство валюты, это уменьшит денежную стоимость, а уменьшение производства увеличит денежную стоимость."
 
-  concept_money_value_target_real:0 "Metal Parity" #je pense que c'est le money valu ciblé
-  concept_money_value_target_real_desc:0 "The Metal Parity is the Metal value that you desire your national currency to achieve."
+  concept_money_value_target_real:0 "Металлический паритет" #je pense que c'est le money valu ciblé
+  concept_money_value_target_real_desc:0 "Металлический паритет - это стоимость в металле, которой вы хотите добиться от своей национальной валюты."
 
-  concept_money_value_target_selection:0 "Metal Parity"
-  concept_money_value_target_selection_desc:0 "The Metal Parity is the Metal value that you desire your national currency to achieve."
+  concept_money_value_target_selection:0 "Металлический паритет."
+  concept_money_value_target_selection_desc:0 "Это стоймость в драгметалле, которой вы хотите добиться от своей национальной валюты."
 
-  concept_money_supply:0 "Money Supply"
-  concept_money_supply_desc:0 "The Money Supply represents the total amount of the national currency present in your market."
+  concept_money_supply:0 "Масса денег"
+  concept_money_supply_desc:0 "Денежная масса представляет собой общее количество национальной валюты, присутствующей на вашем рынке."
 
-  concept_central_bank_gold_reserve_ratio:0 "Central Bank Metal Reserve Ratio"
-  concept_central_bank_gold_reserve_ratio_desc:0 "The Central Bank Metal Reserve Ratio represents the percentage of a country’s money supply that is backed by the central bank’s Metal reserves. This ratio indicates how much of the circulating currency can be converted into Metal."
+  concept_central_bank_gold_reserve_ratio:0 "Коэффициент драгметаллов ЦБ"
+  concept_central_bank_gold_reserve_ratio_desc:0 "Коэффициент металлического резерва центрального банка представляет собой процент денежной массы страны, обеспеченной металлическими резервами центрального банка. Этот коэффициент показывает, какая часть обращающейся валюты может быть конвертирована в металл."
 
-  concept_money_value_target:0 "Metal Coverage Ratio"
-  concept_money_value_target_desc:0 "The Metal coverage ratio represents the maximum value of the national currency that you can or must produce to achieve the [concept_money_value_target_real]. If your [concept_money_supply] exceeds your [concept_money_value_target], the monthly money supply will reset to 0, and you won't be able to store more currency. In addition, a penalty of -1% per month on monetary production will be applied to your central bank, up to a maximum of -50%. This penalty is applicable only if 'no monetary policy' and 'revaluation' are active; if you are in a 'devaluation policy', this limit will not be considered, and the currency value will tend toward 0. In general, this means that you desire to maintain the value of your currency at a level that is too high relative to what your market allows."
+  concept_money_value_target:0 "Коэффициент покрытия"
+  concept_money_value_target_desc:0 "Коэффициент покрытия драгметаллов - это количество драгметаллов обеспечивающих максимальную стоимость национальной валюты, которое вы можете или должны получить для достижения [Concept('concept_money_value_target_real' , 'Металлического паритета')]. Если ваша [concept_money_supply] превысит коэффициент покрытия металла, месячная денежная масса обнулится до 0, и вы не сможете хранить больше валюты. Кроме того, к вашему центральному банку будет применен штраф в размере -1 % в месяц от денежной массы, максимум -50 %. \n\nЭтот штраф применяется в случае, если активны «отсутствие денежной политики» и «ревальвация». \nВ случае если вы проводите «девальвационную политику», штраф не будет учитываться, а стоимость валюты будет стремиться к 0."
 
   concept_money_value_target_with_reference_currency_selection:0 "Parity with the Reference Currency"
   concept_money_value_target_with_reference_currency_selection_desc:0 "De Rien"
 
-  concept_inflation_value:0 "Inflation Value"
-  concept_inflation_value_desc:0 "Inflation/deflation is the result of several parameters: Annual natural inflation, Market price, Currency value, and Inflation arising from the production of your currency. You can influence inflation/deflation by acting on these different parameters."
+  concept_inflation_value:0 "Инфляция"
+  concept_inflation_value_desc:0 "Инфляция/дефляция - это результат нескольких параметров: Годовая естественная инфляция, Рыночная цена, Стоимость валюты и Инфляция, возникающая при производстве вашей валюты. Вы можете влиять на инфляцию/дефляцию, воздействуя на эти различные параметры."
 
-  concept_national_capacity:0 "National Capacity"
-  concept_national_capacity_desc:0 "The National Capacity represents the total amount of gold that the country possesses. It is determined by several factors: the [concept_government_treasury], the [concept_central_bank_metal_reserves], and the [concept_gold_balance]."
+  concept_national_capacity:0 "Национальное богатство"
+  concept_national_capacity_desc:0 "Представляет собой общее количество драгметаллов которым владеет страна. Определяется несколькими факторами: Доходы в [concept_government_treasury], [concept_central_bank_metal_reserves], и [concept_gold_balance]."
 
   concept_devaluation:0 "Devaluation"
   concept_devaluation_desc:0 "In the 19th century, devaluation was generally understood as an economic action consisting of reducing the official value of a currency relative to a benchmark, such as another foreign currency or a monetary standard such as gold or silver. You can devalue your currency by 25%, 50%, 75%, or 100%. This means that you increase your current monetary production capacity by that percentage. At the same time, your monetary production inflation will increase by +1, +2, +3, or +4 in intervals of 6 months."
@@ -6270,20 +6269,20 @@ pmg_base_building_private_construction_sector:0 "Private Construction Sector"
   concept_parity:0 "Parity"
   concept_parity_desc:0 "In the 19th century, the term "parity" in monetary economics referred to the official or fixed ratio between two currencies or between a currency and a monetary standard such as gold or silver. Parity determined the relative value of one currency compared to another or compared to a common reference."
 
-  concept_central_bank_metal_reserves:0 "Central Bank Metal Reserves"
-  concept_central_bank_metal_reserves_desc:0 "Central Bank Metal Reserves are metals hold in your [concept_central_bank]. This gmetalsold is the main source of value for the country's currency. These metals is positioned in the state where your [concept_central_bank] is located, if this state is annexed by an enemy country, you lose these metals. This gold comes from the metals present in your market which is stocked every month, more gold you have in your market, more metals you accumulate in the Central Bank Metal Reserves. Subject countries cannot accumulate metals.
+  concept_central_bank_metal_reserves:0 "Резервы ЦентроБанка"
+  concept_central_bank_metal_reserves_desc:0 "Резервы Центрального банка - это металлы, хранящиеся в вашем центральном банке. Драгметаллы являются основным источником стоимости валюты страны. Они находятся в провинции, где расположен ваш [concept_central_bank], если эту провинцию оккупирует вражеская страна, вы потеряете свои накопления. Драгметаллы поступают из присутствующих на вашем рынке, пополняются каждый месяц, чем больше драгметаллов у вас на рынке, тем больше вы накапливаете в резерве Центрального банка. Страны-субъекты не могут накапливать драгметаллы.
 
-  concept_gold_balance:0 "Trade Balance"
-  concept_gold_balance_desc:0 "Trade Balance refers to the situation where a country maintains a balanced balance in its trade with other nations, in terms of net inflows and outflows of gold. In a context where a country was on a gold standard or where the currency was backed by gold, this trade balance was crucial to maintaining the stability of its currency and its gold reserves."
+  concept_gold_balance:0 "Торговый баланс"
+  concept_gold_balance_desc:0 "Торговый баланс - это ситуация, когда страна поддерживает равновесие в своей торговле с другими странами с точки зрения чистого притока и оттока золота. В условиях, когда страна находилась на золотом стандарте или когда валюта была обеспечена золотом, такой торговый баланс имел решающее значение для поддержания стабильности ее валюты и золотых запасов."
 
-  concept_import_value:0 "Import Cost (in Gold)"
-  concept_import_value_desc:0 "The cost of import (in gold) is the totality of what you buy on the foreign market. You pay for these goods in gold and not with a national currency (the modern notion of purchasing foreign goods in national currency dates from the 1970s and the end of the Bretton Woods system)."
+  concept_import_value:0 "Стоимость импорта"
+  concept_import_value_desc:0 "Стоимость импорта (в золоте) - это совокупность того, что вы покупаете на внешнем рынке. Вы платите за эти товары золотом, а не национальной валютой (современное представление о покупке иностранных товаров в национальной валюте появилось в 1970-х годах и после окончания Бреттон-Вудской системы)."
 
-  concept_export_value:0 "Export Profit (in Gold)"
-  concept_export_value_desc:0 "Export Profit (in gold) is the totality of what you sell in the foreign market. You sell these goods in gold and not with a national currency (the modern notion of selling foreign goods in national currency dates from the 1970s and the end of the Bretton Woods system).
+  concept_export_value:0 "Доход от экспорта"
+  concept_export_value_desc:0 "Прибыль от экспорта (в золоте) - это совокупность того, что вы продаете на внешнем рынке. Вы продаете эти товары в золоте, а не в национальной валюте (современное представление о продаже иностранных товаров в национальной валюте появилось в 1970-х годах и после окончания Бреттон-Вудской системы)."
 
-  concept_world_currency:0 "World Currency"
-  concept_world_currency_desc:0 "The World Currency list allows you to see where your national currency is located in relation to the other world currency."
+  concept_world_currency:0 "Мировые валюты"
+  concept_world_currency_desc:0 "Список мировых валют позволяет увидеть информацию о других валютах, так же в этом окне вы можете увидеть национальное богатство других стран"
 
   concept_evolution_of_the_currency_value:0 "Evolution of the currency value"
   concept_evolution_of_the_currency_value_desc:0 "The Evolution of the currency value list, allows you to see the evolution of the value of the world currencies over 1 year, 5 years and 10 years. (The values may appear to be buggy but it takes 5 years and 10 years of play for set the values correctly)
@@ -6291,23 +6290,23 @@ pmg_base_building_private_construction_sector:0 "Private Construction Sector"
   concept_exchange_rate:0 "Exchange Rate"
   concept_exchange_rate_desc:0 "In the 19th century, exchange rates between currencies were generally determined by a fixed exchange rate system based on the gold standard. This meant that the value of national currencies was fixed in relation to a specific quantity of gold. Governments often priced their national currencies in gold, thereby ensuring its convertibility."
 
-  concept_money_value_rapported_inflation:0 "Money Value Rapported Inflation"
-  concept_money_value_rapported_inflation_desc:0 "Money Value Reported to Inflation is the value of your currency increasing or decreasing due to your inflation/deflation. It is a crucial factor in determining the value of your currency for exchange rates."
+  concept_money_value_rapported_inflation:0 "Ценность с учетом инфляции"
+  concept_money_value_rapported_inflation_desc:0 "Денежная стоимость с учетом инфляции - это стоимость вашей валюты, увеличивающаяся или уменьшающаяся в результате инфляции/дефляции. Это важнейший фактор при определении стоимости вашей валюты для обменных курсов."
 
-  concept_international_economic_power:0 "International Economic Power"
-  concept_international_economic_power_desc:0 "The International Economic Power is determined by the country possessing the greatest national capacity. This means that it is the currency with the largest counterpart, making it extremely solid in global markets. This value can be modified based on the country that possesses the greatest national capacity. (It's up to you to play!)"
+  concept_international_economic_power:0 "Международная экономическая сила"
+  concept_international_economic_power_desc:0 "Это страна, обладающая наибольшим национальным богатством. Это означает, что у валюты страны очень много контрагентов, что делает ее чрезвычайно стабильной на мировых рынках. (Другая страна может занять это место, если показатель богатства будет больше чем у текущего лидера, этот показатель вы можете увидеть ниже, в разделе "Мировые Валюты")"
 
-  concept_monetary_policy:0 "Monetary Policy"
-  concept_monetary_policy_desc:0 "The Monetary Policy is the primary mean that allows you to manage your inflation/deflation. It also enables you to increase or decrease your [concept_money_supply], which will influence the [concept_money_value] your currency. It is the principal mean of achieving your [concept_money_value_target]."
+  concept_monetary_policy:0 "Монетарная политика"
+  concept_monetary_policy_desc:0 "Денежно-кредитная политика - это основной инструмент, который позволяет вам управлять инфляцией/дефляцией. Она также позволяет вам увеличивать или уменьшать [Concept('concept_money_supply' , 'Денежную массу')], что влияет на [concept_money_value] вашей валюты. Это основное средство чтобы обеспечить [concept_money_value_target]."
 
   concept_currency_reserves:0 "Currency Reserves"
   concept_currency_reserves_desc:0 "The Currency Reserves is the total amount of foreign currency you possess, whether acquired through purchase or obtained through trade. You accumulate foreign currency only if a foreign country wishes to import goods from your market. In this case, the foreign country buys your goods, paying with its own currency. The same principle applies in the opposite direction if you import goods from another market; you transfer your currency to that country."
 
-  concept_national_debt:0 "National Debt"
-  concept_national_debt_desc:0 "The total amount of money that a country's government has borrowed, typically issued through securities such as government bonds and Treasury bills. It includes both domestic and foreign debt."
+  concept_national_debt:0 "Гос. долг"
+  concept_national_debt_desc:0 "Общая сумма денег, которую правительство страны взяло в долг, обычно выпуская такие ценные бумаги, как государственные облигации и казначейские векселя. Он включает в себя как внутренний, так и внешний долг."
 
-  concept_credit_at_central_bank:0 "Credit at Central Bank debt"
-  concept_credit_at_central_bank_desc:0 "The amount of credit extended to the central bank, often through mechanisms such as open market operations or other monetary policy tools. This can include short-term borrowing by commercial banks from the central bank."
+  concept_credit_at_central_bank:0 "Кредит Центрального банка"
+  concept_credit_at_central_bank_desc:0 "Сумма кредита, предоставленного центральным банком, часто через такие механизмы, как операции на открытом рынке или других инструментов денежно-кредитной политики. Может включать краткосрочные займы коммерческих банков у центрального банка."
 
   concept_central_bank_debt:0 "Central Bank Debt"
   concept_central_bank_debt_desc:0 "Central bank debt represents the difference between the gold held by the bank and the gold needed to ensure gold parity. If this debt is greater than 0 then central banks or foreign governments will lend gold against annual interest."
@@ -6372,10 +6371,10 @@ pmg_base_building_private_construction_sector:0 "Private Construction Sector"
   concept_railroad_stock_index:0 "Railroad Stock Capitalization"
   concept_railroad_stock_index_desc:0 "The [concept_railroad_stock_index] is the total quantity of product Stocks multiplied by their price"
 
-  concept_short_term_monetary_policy:0 "Small Monetary Policy Ajustment"
+  concept_short_term_monetary_policy:0 "Небольшая корректировка денежной политики"
   concept_short_term_monetary_policy_desc:0 "A minor change implemented by a central bank in its monetary policy tools, such as interest rates, reserve requirements, or open market operations, aimed at fine-tuning economic conditions. These adjustments are typically made to address short-term economic fluctuations without significantly altering the overall monetary policy stance."
 
-  concept_long_term_monetary_policy:0 "Large Monetary Policy Ajustment"
+  concept_long_term_monetary_policy:0 "Крупная корректировка денежной политики"
   concept_long_term_monetary_policy_desc:0 "A significant change implemented by a central bank in its monetary policy tools, such as substantial adjustments to interest rates, major alterations in reserve requirements, or large-scale open market operations. These adjustments are typically made in response to serious economic conditions or crises, aiming to bring about significant changes in economic activity."
 
   concept_money_circulating:0 "Currency Circulating"
@@ -6468,7 +6467,7 @@ pmg_base_building_private_construction_sector:0 "Private Construction Sector"
   revaluation_currency_75_small:0 "@revaluation_txt! 75%"
   revaluation_currency_100_small:0 "@revaluation_txt! 100%"
 
-  devaluation_txt_prev:0 "No inflation by monetary policy if the base price of the good [GetPlayer.GetCustom('currency_name')] [GetPlayer.GetCustom('currency_good')] is above #n 50%#! (Actual: [GetPlayer.MakeScope.ScriptValue('currency_market_goods_lake_ratio')|%|-]) or in shortage"
+  devaluation_txt_prev:0 "Монетарная политика не повлияет на инфляцию, если базовая цена товара [GetPlayer.GetCustom('currency_name')] [GetPlayer.GetCustom('currency_good')] выше #n 50%#! (Сейчас: [GetPlayer.MakeScope.ScriptValue('currency_market_goods_lake_ratio')|%|-]) или он в дефиците"
 
   customs_union_limit_20:0  "Customs union limit 20%"
   protectora_limit_30:0 "Protectora limit 30ù"
@@ -8220,8 +8219,8 @@ goods_output_thaler_saxon_thaler_c_mult:0 "Goods Output multiplyCurrency"
   stockpiling_goods:0 "Stockpiling Goods"
   stockpiling_goods_desc:0 "Once National Stockpile technology is unlocked your country will begin [concept_flow_storage]. The [concept_flow_storage], stores market surplus, at no cost. Unlike the order of storage or release possible thanks to national stockpile technology which can be expensive for the country but allows you to make better strategic reserves."
 
-  national_stockpile:0 "National Stockpile"
-  national_stockpile_desc:0 "This technology will allow you to create a National Stockpile"
+  national_stockpile:0 "Национальный запас"
+  national_stockpile_desc:0 "Эта технология позволит вам создать Национальный запас"
 
   financial_center:0 "Financial Center"
   financial_center_desc:0 "This technology will allow you to create a Financial Center"
@@ -8417,15 +8416,15 @@ goods_output_thaler_saxon_thaler_c_mult:0 "Goods Output multiplyCurrency"
   ################################
   #INFLATION_TITLE
   ################################
-  INFLATION_TITLE:0 "@inflation!#T Inflation and Deflation#!\n$INFLATION_BALANCE$\n$INFLATION_MODIFIER$\n$INFLATION_HIST$"
+  INFLATION_TITLE:0 "@inflation!#T Инфляция и Дефляция#!\n$INFLATION_BALANCE$\n$INFLATION_MODIFIER$\n$INFLATION_HIST$"
 
-  INFLATION_BALANCE:0 "Current：#n [Country.MakeScope.ScriptValue('inflation_value')|%|=-]#!\n$TOOLTIP_DELIMITER$\nFrom #v Consumer Goods#! [Country.MakeScope.Var('inflation_on_consumer_goods_rolling_inflation_6_months').GetValue|%|=-]\nFrom #v Energy#! [Country.MakeScope.Var('inflation_on_energy_rolling_inflation_6_months').GetValue|%|=-]\nFrom #v Raw Material#! [Country.MakeScope.Var('inflation_on_raw_material_rolling_inflation_6_months').GetValue|%|=-]\nFrom #v Manufactured Goods#! [Country.MakeScope.Var('inflation_on_manufactured_goods_rolling_inflation_6_months').GetValue|%|=-]\nFrom #v Military Equipment#! [Country.MakeScope.Var('inflation_on_military_equipment_rolling_inflation_6_months').GetValue|%|=-]\nFrom #v Currency value Variation#! [Country.MakeScope.ScriptValue('money_value_dif_01_rolling_inflation_6_months_limited')|%|-=] (Limited)\nFrom #v Monetary Policy#! [Country.MakeScope.ScriptValue('monetary_policy_inflation')|%|-=]\n$TOOLTIP_DELIMITER$"
+  INFLATION_BALANCE:0 "Текущее значение：#n [Country.MakeScope.ScriptValue('inflation_value')|%|=-]#!\n$TOOLTIP_DELIMITER$\n #v Товары народного потребления#! [Country.MakeScope.Var('inflation_on_consumer_goods_rolling_inflation_6_months').GetValue|%|=-]\n #v Энергетика#! [Country.MakeScope.Var('inflation_on_energy_rolling_inflation_6_months').GetValue|%|=-]\n #v Сырье#! [Country.MakeScope.Var('inflation_on_raw_material_rolling_inflation_6_months').GetValue|%|=-]\n #v Промышленные товары#! [Country.MakeScope.Var('inflation_on_manufactured_goods_rolling_inflation_6_months').GetValue|%|=-]\n #v Военные товары#! [Country.MakeScope.Var('inflation_on_military_equipment_rolling_inflation_6_months').GetValue|%|=-]\n #v Изменение ценности валюты#! [Country.MakeScope.ScriptValue('money_value_dif_01_rolling_inflation_6_months_limited')|%|-=] (Ограничено)\n #v Монетарная политика#! [Country.MakeScope.ScriptValue('monetary_policy_inflation')|%|-=]\n$TOOLTIP_DELIMITER$"
 
-  INFLATION_MODIFIER:0 "#v Modifier:#! \nCurrent (Greater than #N 2%#! or less than #P -2%#!) Effect:\n[GetScriptedGui('modifier_inflation').ExecuteTooltip( GuiScope.SetRoot(Country.MakeScope).End)]\n$TOOLTIP_DELIMITER$"
+  INFLATION_MODIFIER:0 "#v Модификатор:#! \nТекущий (Больше #N 2%#! или меньше #P -2%#!) эффект:\n[GetScriptedGui('modifier_inflation').ExecuteTooltip( GuiScope.SetRoot(Country.MakeScope).End)]\n$TOOLTIP_DELIMITER$"
 
-  INFLATION_HIST:0 "#v Historical:#! \nCumulative Inflation over 5 Years: #n [Country.MakeScope.ScriptValue('cumulative_inflation_5_year')|%|=-]#!\nCumulative Inflation over 10 Years: #n [Country.MakeScope.ScriptValue('cumulative_inflation_10_year')|%|=-]#!\nTotal Cumulative Inflation: #n [Country.MakeScope.ScriptValue('cumulative_inflation_since_beginning')|%|=-]#!"
+  INFLATION_HIST:0 "#v История:#! \nСовокупная инфляция за 5 лет: #n [Country.MakeScope.ScriptValue('cumulative_inflation_5_year')|%|=-]#!\nСовокупная инфляция за 10 лет: #n [Country.MakeScope.ScriptValue('cumulative_inflation_10_year')|%|=-]#!\nОбщая совокупная инфляция: #n [Country.MakeScope.ScriptValue('cumulative_inflation_since_beginning')|%|=-]#!"
 
-  INFLATION_DESC:0 "Inflation/deflation is the result of several parameters: Annual natural inflation, Market price, Currency value, and Inflation arising from the production of your currency. You can influence inflation/deflation by acting on these different parameters."
+  INFLATION_DESC:0 "Инфляция/дефляция - это результат нескольких параметров: Годовая естественная инфляция, Рыночная цена, Стоимость валюты и Инфляция, возникающая при производстве вашей валюты. Вы можете влиять на инфляцию/дефляцию, воздействуя на эти различные параметры."
 
   ################################
   #GDP_TOOLTIP
